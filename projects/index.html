@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Course Projects – SDS316 - Fall 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-38a3e71591390121d99b591f9aaca1bc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-author','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS316 - Fall 2026</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> <i class="bi bi-file-earmark" role="img">
+</i> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../assignments.html"> <i class="bi bi-list-task" role="img">
+</i> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lectures.html"> <i class="bi bi-chat" role="img">
+</i> 
+<span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> <i class="bi bi-calendar-minus" role="img">
+</i> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../projects/index.html" aria-current="page"> <i class="bi bi-rocket-takeoff" role="img">
+</i> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-tools" role="img">
+</i> 
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../datasets.html"><i class="bi bi-table" role="img">
+</i> 
+ <span class="dropdown-text">Datasets</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tech-stack.html"><i class="bi bi-laptop" role="img">
+</i> 
+ <span class="dropdown-text">Working Environment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../examples.html"><i class="bi bi-bar-chart-steps" role="img">
+</i> 
+ <span class="dropdown-text">Examples</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../class-log.html"><i class="bi bi-box-arrow-in-right" role="img">
+</i> 
+ <span class="dropdown-text">Class Log</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1PpndXanj3ffEbUn9nla2POWdhno5BHOCkrkRx4DyzTc/edit?tab=t.0#heading=h.5xdobrmir9r2"> <i class="bi bi-envelope" role="img" aria-label="Contact and Office Hours">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/drnikko/sds316"> <i class="bi bi-github" role="img" aria-label="Github">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(14)</span></div><div class="category" data-category="JTVCR2VvZ3JhcGh5JTJDJTIwU2VncmVnYXRpb24lMkMlMjBEaXNjaXBsaW5lJTJDJTIwU2Nob29sJTVE">[Geography, Segregation, Discipline, School] <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXJyZXN0cyUyMHZzLiUyMENvbnZpY3Rpb25z">Arrests vs. Convictions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2FwdHVyZQ==">Capture <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q2hpbGRyZW4=">Children <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q3JpbWUlMjByZWR1Y3Rpb24=">Crime reduction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMEFubGF5c2lz">Data Anlaysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFNvdXJjZXM=">Data Sources <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVtb2dyYXBoaWNz">Demographics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RGV0ZW50aW9u">Detention <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGlzY3Vzc2lvbg==">Discussion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RE1W">DMV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RHJ1Z3M=">Drugs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RWxlY3Rpb25z">Elections <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2VvZ3JhcGh5">Geography <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R2VvcmdyYXBoeS1Hcm91cA==">Georgraphy-Group <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5jYXJjZXJhdGlvbg==">Incarceration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW52ZXN0aWdhdGlvbg==">Investigation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="SnV2ZW5pbGVz">Juveniles <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGVnYWwlMjBCYWNrZ3JvdW5k">Legal Background <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFzcyUyMEluY2FyY2VyYXRpb24=">Mass Incarceration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVuaWNpcGFsJTIwYnVkZ2V0">Municipal budget <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TkFNRS1PRi1SRVNFQVJDSC1HUk9VUA==">NAME-OF-RESEARCH-GROUP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saWNlJTIwc3BlbmRpbmc=">Police spending <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9wdWxhdGlvbg==">Population <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHJpc29uJTIwR2VycnltYW5kZXJpbmc=">Prison Gerrymandering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHVuaXNobWVudA==">Punishment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmFjZQ==">Race <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmUtZW50cnk=">Re-entry <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVsZWFzZQ==">Release <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVwcmVzZW50YXRpb24=">Representation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Um9sZSUyMG9mJTIwUmFjZQ==">Role of Race <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsJTIwc3BlbmRpbmc=">Social spending <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGU=">State <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VwZXJ2aXNpb24=">Supervision <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dGVtcGxhdGU=">template <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGV4YXM=">Texas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VHJpYWw=">Trial <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VHJpYWxz">Trials <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vm90ZSUyMERpbHV0aW9u">Vote Dilution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vm90aW5n">Voting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V2FzaGluZ3RvbiUyMHN0YXRl">Washington state <span class="quarto-category-count">(1)</span></div></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Course Projects</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="TGVnYWwlMjBCYWNrZ3JvdW5kJTJDRGF0YSUyMFNvdXJjZXMlMkNSb2xlJTIwb2YlMjBSYWNlJTJDQXJyZXN0cyUyMHZzLiUyMENvbnZpY3Rpb25zJTJDRGlzY3Vzc2lvbg==" data-listing-date-sort="1792627200000" data-listing-file-modified-sort="1794320412356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
+<a href="../projects/catherine project revamp/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/catherine project revamp/images/gavel.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Influence of Race on Domestic Violence Arrests and Convictions
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGVnYWwlMjBCYWNrZ3JvdW5k'); return false;">Legal Background</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNvdXJjZXM='); return false;">Data Sources</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Um9sZSUyMG9mJTIwUmFjZQ=='); return false;">Role of Race</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXJyZXN0cyUyMHZzLiUyMENvbnZpY3Rpb25z'); return false;">Arrests vs. Convictions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGlzY3Vzc2lvbg=='); return false;">Discussion</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Examining the relationship between race and involvement with thejustice system for domestic violence crimes.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Catherine Xu
+</div>
+<div class="listing-date">
+Oct 22, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="JTVCR2VvZ3JhcGh5JTJDJTIwU2VncmVnYXRpb24lMkMlMjBEaXNjaXBsaW5lJTJDJTIwU2Nob29sJTVE" data-listing-date-sort="1792540800000" data-listing-file-modified-sort="1794320412509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
+<a href="../projects/hayden_project/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/hayden_project/images/schoolsegregation.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Hayden’s Research Project
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JTVCR2VvZ3JhcGh5JTJDJTIwU2VncmVnYXRpb24lMkMlMjBEaXNjaXBsaW5lJTJDJTIwU2Nob29sJTVE'); return false;">[Geography, Segregation, Discipline, School]</div>
+
+</div>
+<div class="card-text listing-description">
+<p>An exploration of the implications of racial and socioeconomic inequalities surrounding school disciplinary action throughout Mecklenburg County</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Hayden Steinmann
+</div>
+<div class="listing-date">
+Oct 21, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="R2VvcmdyYXBoeS1Hcm91cCUyQ0RNViUyQ1JhY2UlMkNJbmNhcmNlcmF0aW9uJTJDRGF0YSUyMEFubGF5c2lz" data-listing-date-sort="1792540800000" data-listing-file-modified-sort="1794320412520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="143">
+<a href="../projects/kaylas-deliverable2/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/kaylas-deliverable2/images/images.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Template Project - Stage 2
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2VvcmdyYXBoeS1Hcm91cA=='); return false;">Georgraphy-Group</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RE1W'); return false;">DMV</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmFjZQ=='); return false;">Race</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5jYXJjZXJhdGlvbg=='); return false;">Incarceration</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFubGF5c2lz'); return false;">Data Anlaysis</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Index for Stage 2</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Kayla Tillmon
+</div>
+<div class="listing-date">
+Oct 21, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Q2hpbGRyZW4lMkNKdXZlbmlsZXMlMkNEZW1vZ3JhcGhpY3M=" data-listing-date-sort="1792540800000" data-listing-file-modified-sort="1794320415030" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
+<a href="../projects/reagan/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/reagan/children.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Treatment of Children in the US Criminal Justice System
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2hpbGRyZW4='); return false;">Children</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SnV2ZW5pbGVz'); return false;">Juveniles</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVtb2dyYXBoaWNz'); return false;">Demographics</div>
+
+</div>
+<div class="card-text listing-description">
+<p>An exploration of how young people involved in the criminal justice system view themselves, their futures, and their experiences with police and judges</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Reagan Gonzales
+</div>
+<div class="listing-date">
+Oct 21, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="VGV4YXMlMkNQb3B1bGF0aW9uJTJDRGVtb2dyYXBoaWNzJTJDRHJ1Z3M=" data-listing-date-sort="1792540800000" data-listing-file-modified-sort="1794320415175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<a href="../projects/tanisha-template/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/tanisha-template/images/texas.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Texas Incarceration
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGV4YXM='); return false;">Texas</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9wdWxhdGlvbg=='); return false;">Population</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVtb2dyYXBoaWNz'); return false;">Demographics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RHJ1Z3M='); return false;">Drugs</div>
+
+</div>
+<div class="card-text listing-description">
+<p>An Investigation of the Offenses and Demographics in Texas Prisons</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Tanisha Chetty
+</div>
+<div class="listing-date">
+Oct 21, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="RGVtb2dyYXBoaWNz" data-listing-date-sort="1790726400000" data-listing-file-modified-sort="1794320412510" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
+<a href="../projects/immigrants-crime/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/immigrants-crime/images/thumbnail.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Immigration Detention and/or Criminal Justice Outcomes Across Different Immigration Status Before and After COVID-19
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVtb2dyYXBoaWNz'); return false;">Demographics</div>
+
+</div>
+<div class="card-text listing-description">
+<p>An research on how immigrants-related criminal justice patterns changed before and after the COVID-19 pandemic.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Ruolin Kang
+</div>
+<div class="listing-date">
+Sep 30, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="R2VvZ3JhcGh5JTJDUmFjZSUyQ1RyaWFscyUyQ01hc3MlMjBJbmNhcmNlcmF0aW9uJTJDUG9wdWxhdGlvbiUyQ1N0YXRl" data-listing-date-sort="1790726400000" data-listing-file-modified-sort="1794320412517" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
+<a href="../projects/kaylas-deliverable1/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/kaylas-deliverable1/projects/template/images/il_fullxfull.4027163603_lj7p.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Kayla’s Template Project
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2VvZ3JhcGh5'); return false;">Geography</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmFjZQ=='); return false;">Race</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpYWxz'); return false;">Trials</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFzcyUyMEluY2FyY2VyYXRpb24='); return false;">Mass Incarceration</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9wdWxhdGlvbg=='); return false;">Population</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGU='); return false;">State</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Kayla’s Index.qmd</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Kayla Tillmon
+</div>
+<div class="listing-date">
+Sep 30, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="R2VvZ3JhcGh5JTJDRWxlY3Rpb25zJTJDUmVwcmVzZW50YXRpb24lMkNWb3RpbmclMkNQcmlzb24lMjBHZXJyeW1hbmRlcmluZyUyQ1ZvdGUlMjBEaWx1dGlvbg==" data-listing-date-sort="1790726400000" data-listing-file-modified-sort="1794320412758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
+<a href="../projects/rae/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/rae/images/Prisonweb.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ensemble analysis of prison gerrymandering refroms
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2VvZ3JhcGh5'); return false;">Geography</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxlY3Rpb25z'); return false;">Elections</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVwcmVzZW50YXRpb24='); return false;">Representation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Vm90aW5n'); return false;">Voting</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJpc29uJTIwR2VycnltYW5kZXJpbmc='); return false;">Prison Gerrymandering</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Vm90ZSUyMERpbHV0aW9u'); return false;">Vote Dilution</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Using ensembles to quantify prison gerrymandering</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Rae Traver-Fallick
+</div>
+<div class="listing-date">
+Sep 30, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="UG9saWNlJTIwc3BlbmRpbmclMkNTb2NpYWwlMjBzcGVuZGluZyUyQ0NyaW1lJTIwcmVkdWN0aW9uJTJDTXVuaWNpcGFsJTIwYnVkZ2V0JTJDV2FzaGluZ3RvbiUyMHN0YXRl" data-listing-date-sort="1790726400000" data-listing-file-modified-sort="1794320415261" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
+<a href="../projects/wa-state-police-social-spending/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/wa-state-police-social-spending/images/wsp.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Washington State Law Enforcement &amp; Social Spending
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9saWNlJTIwc3BlbmRpbmc='); return false;">Police spending</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U29jaWFsJTIwc3BlbmRpbmc='); return false;">Social spending</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q3JpbWUlMjByZWR1Y3Rpb24='); return false;">Crime reduction</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TXVuaWNpcGFsJTIwYnVkZ2V0'); return false;">Municipal budget</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('V2FzaGluZ3RvbiUyMHN0YXRl'); return false;">Washington state</div>
+
+</div>
+<div class="card-text listing-description">
+This project explores the breakdown of police spending and social spending in each of Washington state’s 39 counties. Using Washington state fiscal information, I am looking…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Julia Laney
+</div>
+<div class="listing-date">
+Sep 30, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="SW52ZXN0aWdhdGlvbiUyQ1N1cGVydmlzaW9u" data-listing-date-sort="1789344000000" data-listing-file-modified-sort="1794320412525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
+<a href="../projects/leah/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/leah/images/flock_stock.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Flock Camera Usage for ICE Detainment
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW52ZXN0aWdhdGlvbg=='); return false;">Investigation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VwZXJ2aXNpb24='); return false;">Supervision</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Semester Project</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Leah Levensailor
+</div>
+<div class="listing-date">
+Sep 14, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="UHVuaXNobWVudCUyQ05BTUUtT0YtUkVTRUFSQ0gtR1JPVVA=" data-listing-date-sort="1788220800000" data-listing-file-modified-sort="1794320412363" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1638">
+<a href="../projects/demo/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/demo/images/thumbnail.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+DEMO
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHVuaXNobWVudA=='); return false;">Punishment</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TkFNRS1PRi1SRVNFQVJDSC1HUk9VUA=='); return false;">NAME-OF-RESEARCH-GROUP</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Demo project</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Nikko Stevens
+</div>
+<div class="listing-date">
+Sep 1, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="SW52ZXN0aWdhdGlvbiUyQ0NhcHR1cmUlMkNUcmlhbCUyQ0RldGVudGlvbiUyQ1N1cGVydmlzaW9uJTJDUmVsZWFzZSUyQ1JlLWVudHJ5" data-listing-date-sort="1788220800000" data-listing-file-modified-sort="1794320412516" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<a href="../projects/jessie_project/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/jessie_project/images/geography.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jessie’s Project
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW52ZXN0aWdhdGlvbg=='); return false;">Investigation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FwdHVyZQ=='); return false;">Capture</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpYWw='); return false;">Trial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGV0ZW50aW9u'); return false;">Detention</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VwZXJ2aXNpb24='); return false;">Supervision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVsZWFzZQ=='); return false;">Release</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmUtZW50cnk='); return false;">Re-entry</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Stage 1</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jessie Wang
+</div>
+<div class="listing-date">
+Sep 1, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="SW52ZXN0aWdhdGlvbiUyQ0NhcHR1cmUlMkNUcmlhbCUyQ0RldGVudGlvbiUyQ1N1cGVydmlzaW9uJTJDUmVsZWFzZSUyQ1JlLWVudHJ5" data-listing-date-sort="1788220800000" data-listing-file-modified-sort="1794320415177" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<a href="../projects/template-stage1/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/template-stage1/images/thumbnail.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Template Project
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW52ZXN0aWdhdGlvbg=='); return false;">Investigation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FwdHVyZQ=='); return false;">Capture</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJpYWw='); return false;">Trial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGV0ZW50aW9u'); return false;">Detention</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VwZXJ2aXNpb24='); return false;">Supervision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVsZWFzZQ=='); return false;">Release</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmUtZW50cnk='); return false;">Re-entry</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Copy This Template For your Project</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Your name here, If you had help, their name here
+</div>
+<div class="listing-date">
+Sep 1, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="13" data-categories="dGVtcGxhdGU=" data-listing-date-sort="1788220800000" data-listing-file-modified-sort="1794320415177" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<a href="../projects/template-stage2/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/template-stage2/images/thumbnail.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Template Project - Stage 2
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dGVtcGxhdGU='); return false;">template</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Copy This Template For your Project</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Your name here, If you had help, their name here
+</div>
+<div class="listing-date">
+Sep 1, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ratraverfallick\.github\.io\/sds316\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

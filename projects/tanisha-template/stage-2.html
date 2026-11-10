@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Tanisha Chetty">
+
+<title>Stage 2 – SDS316 - Fall 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-38a3e71591390121d99b591f9aaca1bc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SDS316 - Fall 2026</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html"> <i class="bi bi-file-earmark" role="img">
+</i> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../assignments.html"> <i class="bi bi-list-task" role="img">
+</i> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lectures.html"> <i class="bi bi-chat" role="img">
+</i> 
+<span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../schedule.html"> <i class="bi bi-calendar-minus" role="img">
+</i> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> <i class="bi bi-rocket-takeoff" role="img">
+</i> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-tools" role="img">
+</i> 
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../../datasets.html"><i class="bi bi-table" role="img">
+</i> 
+ <span class="dropdown-text">Datasets</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tech-stack.html"><i class="bi bi-laptop" role="img">
+</i> 
+ <span class="dropdown-text">Working Environment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../examples.html"><i class="bi bi-bar-chart-steps" role="img">
+</i> 
+ <span class="dropdown-text">Examples</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../class-log.html"><i class="bi bi-box-arrow-in-right" role="img">
+</i> 
+ <span class="dropdown-text">Class Log</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1PpndXanj3ffEbUn9nla2POWdhno5BHOCkrkRx4DyzTc/edit?tab=t.0#heading=h.5xdobrmir9r2"> <i class="bi bi-envelope" role="img" aria-label="Contact and Office Hours">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/drnikko/sds316"> <i class="bi bi-github" role="img" aria-label="Github">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#question-1-how-many-people-are-in-the-dataset-as-of-april-2026-how-many-people-are-currently-incarcerated-in-the-state-of-texas" id="toc-question-1-how-many-people-are-in-the-dataset-as-of-april-2026-how-many-people-are-currently-incarcerated-in-the-state-of-texas" class="nav-link active" data-scroll-target="#question-1-how-many-people-are-in-the-dataset-as-of-april-2026-how-many-people-are-currently-incarcerated-in-the-state-of-texas">QUESTION #1: How many people are in the dataset? As of April 2026, how many people are currently incarcerated in the state of Texas?</a></li>
+  <li><a href="#question-2-how-many-people-in-the-dataset-are-women" id="toc-question-2-how-many-people-in-the-dataset-are-women" class="nav-link" data-scroll-target="#question-2-how-many-people-in-the-dataset-are-women">QUESTION #2: How many people in the dataset are women?</a></li>
+  <li><a href="#question-3-what-is-the-racial-breakdown-of-the-dataset" id="toc-question-3-what-is-the-racial-breakdown-of-the-dataset" class="nav-link" data-scroll-target="#question-3-what-is-the-racial-breakdown-of-the-dataset">QUESTION #3: What is the racial breakdown of the dataset?</a></li>
+  <li><a href="#question-4-how-many-different-correctional-facilities-are-listed-in-the-dataset" id="toc-question-4-how-many-different-correctional-facilities-are-listed-in-the-dataset" class="nav-link" data-scroll-target="#question-4-how-many-different-correctional-facilities-are-listed-in-the-dataset">QUESTION #4: How many different correctional facilities are listed in the dataset?</a></li>
+  <li><a href="#question-5-how-do-the-racial-breakdowns-compare-to-the-rest-of-the-state" id="toc-question-5-how-do-the-racial-breakdowns-compare-to-the-rest-of-the-state" class="nav-link" data-scroll-target="#question-5-how-do-the-racial-breakdowns-compare-to-the-rest-of-the-state">QUESTION #5: How do the racial breakdowns compare to the rest of the state?</a></li>
+  <li><a href="#qestion-6-what-are-the-criminal-offenses-people-are-primarily-in-for" id="toc-qestion-6-what-are-the-criminal-offenses-people-are-primarily-in-for" class="nav-link" data-scroll-target="#qestion-6-what-are-the-criminal-offenses-people-are-primarily-in-for">QESTION #6: what are the criminal offenses people are primarily in for?</a></li>
+  <li><a href="#question-7-how-much-of-the-incarcerated-population-is-carrying-some-sort-of-drug-charge-not-including-dwidui" id="toc-question-7-how-much-of-the-incarcerated-population-is-carrying-some-sort-of-drug-charge-not-including-dwidui" class="nav-link" data-scroll-target="#question-7-how-much-of-the-incarcerated-population-is-carrying-some-sort-of-drug-charge-not-including-dwidui">QUESTION #7: how much of the incarcerated population is carrying some sort of drug charge? (not including DWI/DUI)</a></li>
+  <li><a href="#qestion-8-how-does-this-the-racial-breakdown-of-drug-convictions-compare-to-the-racial-breakdown-of-the-dataset-as-a-whole" id="toc-qestion-8-how-does-this-the-racial-breakdown-of-drug-convictions-compare-to-the-racial-breakdown-of-the-dataset-as-a-whole" class="nav-link" data-scroll-target="#qestion-8-how-does-this-the-racial-breakdown-of-drug-convictions-compare-to-the-racial-breakdown-of-the-dataset-as-a-whole">QESTION #8: How does this the racial breakdown of drug convictions compare to the racial breakdown of the dataset as a whole?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Stage 2</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tanisha Chetty </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="e8be0b60" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyprojroot <span class="im">import</span> here</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="cc8619bb" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> here(<span class="st">"projects/tanisha-template/data/export.csv"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>april26 <span class="op">=</span> pd.read_csv(file_path, sep<span class="op">=</span><span class="st">','</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>april26.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">SID Number</th>
+<th data-quarto-table-cell-role="th">TDCJ Number</th>
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Current Facility</th>
+<th data-quarto-table-cell-role="th">Gender</th>
+<th data-quarto-table-cell-role="th">Race</th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Projected Release</th>
+<th data-quarto-table-cell-role="th">Maximum Sentence Date</th>
+<th data-quarto-table-cell-role="th">Parole Eligibility Date</th>
+<th data-quarto-table-cell-role="th">Case Number</th>
+<th data-quarto-table-cell-role="th">County</th>
+<th data-quarto-table-cell-role="th">Offense Code</th>
+<th data-quarto-table-cell-role="th">TDCJ Offense</th>
+<th data-quarto-table-cell-role="th">Sentence Date</th>
+<th data-quarto-table-cell-role="th">Offense Date</th>
+<th data-quarto-table-cell-role="th">Sentence (Years)</th>
+<th data-quarto-table-cell-role="th">Last Parole Decision</th>
+<th data-quarto-table-cell-role="th">Next Parole Review Date</th>
+<th data-quarto-table-cell-role="th">Parole Review Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>24323</td>
+<td>2516442</td>
+<td>YOUNGBLOOD,GENE ODIE</td>
+<td>Polunsky</td>
+<td>M</td>
+<td>W</td>
+<td>52</td>
+<td>01/01/5555</td>
+<td>12/21/7550</td>
+<td>NaN</td>
+<td>CF-95-42</td>
+<td>Walker</td>
+<td>9990026</td>
+<td>MURDER - ICC OK OOC#024323</td>
+<td>12/22/1995</td>
+<td>08/16/1995</td>
+<td>5555.0</td>
+<td>NaN</td>
+<td>Unavailable at this time.</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>686567</td>
+<td>311644</td>
+<td>PALACIOS,ROBERT LEONARD</td>
+<td>Beto</td>
+<td>M</td>
+<td>H</td>
+<td>87</td>
+<td>07/13/2028</td>
+<td>05/12/2036</td>
+<td>04/15/2022</td>
+<td>320670</td>
+<td>Harris</td>
+<td>22100000</td>
+<td>BURG HAB W/I SEXUAL ABUSE</td>
+<td>10/21/1980</td>
+<td>01/28/1980</td>
+<td>30.0</td>
+<td>Denied on 04/22/2026</td>
+<td>04/2027</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>770626</td>
+<td>449674</td>
+<td>FLORES,ISABEL</td>
+<td>Pack</td>
+<td>M</td>
+<td>H</td>
+<td>89</td>
+<td>01/01/9999</td>
+<td>01/01/9999</td>
+<td>09/02/2006</td>
+<td>86CR-1234-B</td>
+<td>Nueces</td>
+<td>9150000</td>
+<td>MURDER W/DEADLY WPN</td>
+<td>04/13/1987</td>
+<td>09/02/1986</td>
+<td>Life</td>
+<td>Denied on 11/20/2024</td>
+<td>11/2027</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>771601</td>
+<td>1491019</td>
+<td>MOLETT,JOHN HENRY</td>
+<td>W. Scott</td>
+<td>M</td>
+<td>B</td>
+<td>84</td>
+<td>05/01/2026</td>
+<td>12/02/2037</td>
+<td>12/02/2022</td>
+<td>1144294</td>
+<td>Harris</td>
+<td>12990002</td>
+<td>AGG ROBBERY W/DW</td>
+<td>02/21/2008</td>
+<td>12/03/2007</td>
+<td>30.0</td>
+<td>Approved on 01/30/2025</td>
+<td>NaN</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>786014</td>
+<td>620145</td>
+<td>GLENDINNING,ROBERT WAYNE</td>
+<td>Pack</td>
+<td>M</td>
+<td>W</td>
+<td>88</td>
+<td>01/01/9999</td>
+<td>01/01/9999</td>
+<td>09/23/2022</td>
+<td>0452103D</td>
+<td>Tarrant</td>
+<td>11220000</td>
+<td>AGG SEX ASLT CHILD CT 2</td>
+<td>04/30/1993</td>
+<td>08/01/1991</td>
+<td>Life</td>
+<td>Denied on 03/20/2024</td>
+<td>03/2027</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="18063d4d" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>april26.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.DataFrame'&gt;
+RangeIndex: 142440 entries, 0 to 142439
+Data columns (total 20 columns):
+ #   Column                   Non-Null Count   Dtype
+---  ------                   --------------   -----
+ 0   SID Number               142440 non-null  int64
+ 1   TDCJ Number              142440 non-null  int64
+ 2   Name                     142440 non-null  str  
+ 3   Current Facility         142440 non-null  str  
+ 4   Gender                   142440 non-null  str  
+ 5   Race                     142440 non-null  str  
+ 6   Age                      142440 non-null  int64
+ 7   Projected Release        142439 non-null  str  
+ 8   Maximum Sentence Date    142059 non-null  str  
+ 9   Parole Eligibility Date  130007 non-null  str  
+ 10  Case Number              142396 non-null  str  
+ 11  County                   142440 non-null  str  
+ 12  Offense Code             142440 non-null  int64
+ 13  TDCJ Offense             142396 non-null  str  
+ 14  Sentence Date            139705 non-null  str  
+ 15  Offense Date             142440 non-null  str  
+ 16  Sentence (Years)         142396 non-null  str  
+ 17  Last Parole Decision     75300 non-null   str  
+ 18  Next Parole Review Date  109934 non-null  str  
+ 19  Parole Review Status     129745 non-null  str  
+dtypes: int64(4), str(16)
+memory usage: 21.7 MB</code></pre>
+</div>
+</div>
+<section id="question-1-how-many-people-are-in-the-dataset-as-of-april-2026-how-many-people-are-currently-incarcerated-in-the-state-of-texas" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-how-many-people-are-in-the-dataset-as-of-april-2026-how-many-people-are-currently-incarcerated-in-the-state-of-texas">QUESTION #1: How many people are in the dataset? As of April 2026, how many people are currently incarcerated in the state of Texas?</h2>
+<div id="b63a26ce" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># total rows in dataset</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>total_rows <span class="op">=</span> <span class="bu">len</span>(april26)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Total Rows "</span>, total_rows)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>incarcerated_percent <span class="op">=</span> total_rows <span class="op">/</span> <span class="dv">31709821</span> <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(incarcerated_percent)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Total Rows  142440
+0.44919837295833365</code></pre>
+</div>
+</div>
+<p>There are 142440 people currently in Texas prisons. For reference, according to 2025 Census Estimates, Texas’ population is roughly 31,709,821. This means 0.45% of Texas’ population is currently incarcerated.</p>
+</section>
+<section id="question-2-how-many-people-in-the-dataset-are-women" class="level2">
+<h2 class="anchored" data-anchor-id="question-2-how-many-people-in-the-dataset-are-women">QUESTION #2: How many people in the dataset are women?</h2>
+<div id="674d2ad4" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># how many people in prison in Texas are women? (where Gender = F)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>count_f <span class="op">=</span> <span class="bu">len</span>(april26[april26[<span class="st">'Gender'</span>] <span class="op">==</span> <span class="st">'F'</span>]) </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># percent count</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>gender_breakdown <span class="op">=</span> count_f <span class="op">/</span> total_rows <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of women: "</span>, count_f)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of women: "</span>,  gender_breakdown)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Number of women:  11289
+Percentage of women:  7.925442291491154</code></pre>
+</div>
+</div>
+<p>The number of women is 11289 out of 142440 total peope. The percentage of women is 7.9 in this dataset. Quite a small percentage.</p>
+</section>
+<section id="question-3-what-is-the-racial-breakdown-of-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="question-3-what-is-the-racial-breakdown-of-the-dataset">QUESTION #3: What is the racial breakdown of the dataset?</h2>
+<div id="c8c512f6" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grouping by race and seeing how big the categories are</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>race_groups <span class="op">=</span> april26.groupby(<span class="st">'Race'</span>).size()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>race_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>Race
+A      682
+B    46270
+H    48395
+I       67
+O       59
+U        8
+W    46959
+dtype: int64</code></pre>
+</div>
+</div>
+<p>Okay so this means there are 682 Asian people, 46270 Black people, 48395 Hispanic people, 67 Indian (Native American) people, and 46959 white people. There are also the more ambiguous categories of 58 “other”, and 8 unidentified.</p>
+</section>
+<section id="question-4-how-many-different-correctional-facilities-are-listed-in-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="question-4-how-many-different-correctional-facilities-are-listed-in-the-dataset">QUESTION #4: How many different correctional facilities are listed in the dataset?</h2>
+<div id="71664b85" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>facility_groups <span class="op">=</span> april26.groupby(<span class="st">'Current Facility'</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(facility_groups.ngroups)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(facility_groups.size())</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>facility_groups.size().sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>107
+Current Facility
+Allred            4279
+B. Moore           472
+Bartlett           814
+Baten              140
+Bell               363
+                  ... 
+Wheeler            564
+Willacy County    1055
+Woodman            866
+Wynne             2541
+Young              402
+Length: 107, dtype: int64</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>Current Facility
+Allred                      4279
+Coffield                    4194
+Clements                    3340
+Beto                        3247
+Robertson                   3175
+                            ... 
+Goodman                      198
+Chasefield Wilderness        142
+Baten                        140
+West Texas Hospital          122
+Santa Maria Baby Bonding       5
+Length: 107, dtype: int64</code></pre>
+</div>
+</div>
+<p>There are 107 different correctional facilities in this dataset? Wow! The most populated facilities are Allred, Coffield, Clements, Beto, and Robertson. The least populated facilities are Goodman, Chasefield Wilderness, Baten, West Texas Hospital, and Santa Maria Baby Bonding.</p>
+</section>
+<section id="question-5-how-do-the-racial-breakdowns-compare-to-the-rest-of-the-state" class="level2">
+<h2 class="anchored" data-anchor-id="question-5-how-do-the-racial-breakdowns-compare-to-the-rest-of-the-state">QUESTION #5: How do the racial breakdowns compare to the rest of the state?</h2>
+<div id="3ff06449" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># how many people in prison in Texas are women? (where Gender = F)</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>count_white <span class="op">=</span> <span class="bu">len</span>(april26[april26[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'W'</span>]) </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>count_black <span class="op">=</span> <span class="bu">len</span>(april26[april26[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'B'</span>])</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>count_asian <span class="op">=</span> <span class="bu">len</span>(april26[april26[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'A'</span>])</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>count_hisp <span class="op">=</span> <span class="bu">len</span>(april26[april26[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'H'</span>])</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>count_native <span class="op">=</span> <span class="bu">len</span>(april26[april26[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'I'</span>])</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># total rows in dataset</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>total_rows <span class="op">=</span> <span class="bu">len</span>(april26)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># percent count</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>white_breakdown <span class="op">=</span> count_white <span class="op">/</span> total_rows <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>black_breakdown <span class="op">=</span> count_black <span class="op">/</span> total_rows <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>asian_breakdown <span class="op">=</span> count_asian <span class="op">/</span> total_rows <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>hisp_breakdown <span class="op">=</span> count_hisp <span class="op">/</span> total_rows <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>native_breakdown <span class="op">=</span> count_native <span class="op">/</span> total_rows <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of white people: "</span>,  white_breakdown)</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Black people: "</span>,  black_breakdown)</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Asian people: "</span>,  asian_breakdown)</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Hispanic people: "</span>,  hisp_breakdown)</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Native people: "</span>,  native_breakdown)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Percentage of white people:  32.96756529064869
+Percentage of Black people:  32.48385285032294
+Percentage of Asian people:  0.4787980904240382
+Percentage of Hispanic people:  33.97570907048582
+Percentage of Native people:  0.04703734905925302</code></pre>
+</div>
+</div>
+<p>Percentage of white people: 32.96756529064869 or 32.97% Percentage of Black people: 32.48385285032294 or 32.48% Percentage of Asian people: 0.4787980904240382 or .48% Percentage of Hispanic people: 33.97570907048582 or 33.98% Percentage of Native people: 0.04703734905925302 or .05%</p>
+<p>As of 2025, <a href="https://www.census.gov/quickfacts/fact/table/TX/PST045225">US Census Estimates</a> say that the racial breakdown of Texas is roughly: Percentage of white people: 37.3% Percentage of Black people: 13.4% Percentage of Asian people: 6.7% Percentage of Hispanic people: 40.9% Percentage of Native people: 1.9%</p>
+<p>Notable, although perhaps predictable, the percentage of Black people currently incarcerated is much larger than the percentage of Black people in the general Texas population.</p>
+</section>
+<section id="qestion-6-what-are-the-criminal-offenses-people-are-primarily-in-for" class="level2">
+<h2 class="anchored" data-anchor-id="qestion-6-what-are-the-criminal-offenses-people-are-primarily-in-for">QESTION #6: what are the criminal offenses people are primarily in for?</h2>
+<div id="f2effffe" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grouping by offense and seeing how big the categories are</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>offense_groups <span class="op">=</span> april26.groupby(<span class="st">'TDCJ Offense'</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(offense_groups.ngroups)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(offense_groups.size())</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>offense_groups.size().sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>20690
+TDCJ Offense
+"Z"POSS CS PG1 4-200G             1
+(SUPER) AGG SEX ASLT CHILD U/6    1
+2D DEL OF MARIHUANA               2
+3D DEL MARIHUANA                  1
+AA/DW                             3
+                                 ..
+VOLUNTARY MANSLAUGHTER            3
+VOLUNTARY MANSLAUGTHER            1
+VOYEURISM VICTIM U/14             1
+WIT GAMMA HYDROXYBUTYRATE         1
+WPN POSS-PROH PLACE               1
+Length: 20690, dtype: int64</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>TDCJ Offense
+MURDER                              11928
+AGG ROBBERY                          7532
+AGG SEX ASLT CHILD                   4213
+AGG ASLT W/DWPN                      3261
+ROBBERY                              2645
+                                    ...  
+ENGAGING ORG CRIM ACT/ARSON             1
+ENGAGING ORG CRIM                       1
+ENGAGING OR CRIMINAL ACT                1
+ENGAGING IN ORGANIZED CRIM ACTIV        1
+ENGAGING ORGAN CRIMINAL ACTIVITY        1
+Length: 20690, dtype: int64</code></pre>
+</div>
+</div>
+<p>It seems like the most common offenses are murder, aggravated robbery, aggravated sexual assult with a child, aggravated assault with a deadly weapon, and robbery.</p>
+</section>
+<section id="question-7-how-much-of-the-incarcerated-population-is-carrying-some-sort-of-drug-charge-not-including-dwidui" class="level2">
+<h2 class="anchored" data-anchor-id="question-7-how-much-of-the-incarcerated-population-is-carrying-some-sort-of-drug-charge-not-including-dwidui">QUESTION #7: how much of the incarcerated population is carrying some sort of drug charge? (not including DWI/DUI)</h2>
+<div id="847d6914" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking for sub(substances), drug(drug), cs(controlled substances), cocaine, and meth</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">#couldn't find which offense code corresponds to drug convictions specifically....</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>drug_df <span class="op">=</span> april26[april26[<span class="st">'TDCJ Offense'</span>].<span class="bu">str</span>.contains(<span class="st">'sub|drug|cs|c/s|cocaine|meth'</span>, case<span class="op">=</span><span class="va">False</span>, na<span class="op">=</span><span class="va">False</span>)]</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>drug_df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">SID Number</th>
+<th data-quarto-table-cell-role="th">TDCJ Number</th>
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Current Facility</th>
+<th data-quarto-table-cell-role="th">Gender</th>
+<th data-quarto-table-cell-role="th">Race</th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Projected Release</th>
+<th data-quarto-table-cell-role="th">Maximum Sentence Date</th>
+<th data-quarto-table-cell-role="th">Parole Eligibility Date</th>
+<th data-quarto-table-cell-role="th">Case Number</th>
+<th data-quarto-table-cell-role="th">County</th>
+<th data-quarto-table-cell-role="th">Offense Code</th>
+<th data-quarto-table-cell-role="th">TDCJ Offense</th>
+<th data-quarto-table-cell-role="th">Sentence Date</th>
+<th data-quarto-table-cell-role="th">Offense Date</th>
+<th data-quarto-table-cell-role="th">Sentence (Years)</th>
+<th data-quarto-table-cell-role="th">Last Parole Decision</th>
+<th data-quarto-table-cell-role="th">Next Parole Review Date</th>
+<th data-quarto-table-cell-role="th">Parole Review Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">37</th>
+<td>1169534</td>
+<td>2463330</td>
+<td>HERALD,LAWRENCE</td>
+<td>Estelle</td>
+<td>M</td>
+<td>B</td>
+<td>80</td>
+<td>01/01/9999</td>
+<td>01/01/9999</td>
+<td>08/29/2029</td>
+<td>22287</td>
+<td>Wharton</td>
+<td>35990003</td>
+<td>MANF/DELV CS PG1 4G-200G</td>
+<td>08/03/2023</td>
+<td>09/05/2019</td>
+<td>Life</td>
+<td>NaN</td>
+<td>08/29/2029</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">48</th>
+<td>1212649</td>
+<td>2577126</td>
+<td>FOSTER,JAMES L</td>
+<td>Pack</td>
+<td>M</td>
+<td>B</td>
+<td>80</td>
+<td>04/08/2040</td>
+<td>04/08/2040</td>
+<td>11/26/2026</td>
+<td>14,475</td>
+<td>Tyler</td>
+<td>35990249</td>
+<td>POSS CS PG1/1B 4-200G</td>
+<td>08/19/2025</td>
+<td>08/28/2023</td>
+<td>15.0</td>
+<td>NaN</td>
+<td>11/26/2026</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">81</th>
+<td>1291465</td>
+<td>531037</td>
+<td>JOHNSON,OSCAR</td>
+<td>Allred</td>
+<td>M</td>
+<td>B</td>
+<td>82</td>
+<td>02/05/2043</td>
+<td>03/03/2071</td>
+<td>03/15/2024</td>
+<td>1-89-313</td>
+<td>Smith</td>
+<td>35410000</td>
+<td>DEL OF C/S</td>
+<td>11/07/1989</td>
+<td>04/21/1988</td>
+<td>70.0</td>
+<td>Denied on 10/29/2025</td>
+<td>10/2026</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">92</th>
+<td>1317111</td>
+<td>1943127</td>
+<td>AGUILAR,AROLODO DAVID</td>
+<td>Huntsville</td>
+<td>M</td>
+<td>H</td>
+<td>80</td>
+<td>01/01/9999</td>
+<td>01/01/9999</td>
+<td>10/24/2019</td>
+<td>13-02-01979-CR</td>
+<td>Montgomery</td>
+<td>35990005</td>
+<td>POSS WID/MAN CONT SUB</td>
+<td>05/29/2014</td>
+<td>02/22/2013</td>
+<td>Life</td>
+<td>Approved on 03/13/2026</td>
+<td>NaN</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">96</th>
+<td>1324077</td>
+<td>2477654</td>
+<td>THRASHER,CLARENCE WADE</td>
+<td>Hutchins</td>
+<td>M</td>
+<td>W</td>
+<td>77</td>
+<td>08/28/2033</td>
+<td>08/28/2033</td>
+<td>08/28/2028</td>
+<td>079574-E-CR</td>
+<td>Potter</td>
+<td>35990004</td>
+<td>MAN DEL CS PG1 200-400G</td>
+<td>11/16/2023</td>
+<td>04/17/2020</td>
+<td>10.0</td>
+<td>NaN</td>
+<td>08/28/2028</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">142402</th>
+<td>50823176</td>
+<td>2499561</td>
+<td>ONTIVEROS,MARIO ALBERTO NEVARE</td>
+<td>Bradshaw</td>
+<td>M</td>
+<td>H</td>
+<td>36</td>
+<td>12/20/2027</td>
+<td>12/20/2027</td>
+<td>06/05/2024</td>
+<td>DC-F202400162</td>
+<td>Johnson</td>
+<td>35990248</td>
+<td>POSS CS PG1/1-B 1-4G</td>
+<td>03/19/2024</td>
+<td>12/20/2023</td>
+<td>4.0</td>
+<td>Denied on 08/20/2025</td>
+<td>08/2026</td>
+<td>IN PAROLE REVIEW PROCESS</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">142406</th>
+<td>50823209</td>
+<td>2370776</td>
+<td>MORRISON,DAVID CHASE</td>
+<td>Lindsey</td>
+<td>M</td>
+<td>W</td>
+<td>28</td>
+<td>10/28/2027</td>
+<td>01/08/2032</td>
+<td>10/24/2024</td>
+<td>CR23462</td>
+<td>Wise</td>
+<td>35990003</td>
+<td>MAN DEL CONT SUB PG1 4-200G</td>
+<td>10/19/2021</td>
+<td>04/04/2021</td>
+<td>10.0</td>
+<td>Denied on 09/03/2025</td>
+<td>08/2026</td>
+<td>IN PAROLE REVIEW PROCESS</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">142411</th>
+<td>50823376</td>
+<td>2570501</td>
+<td>MCCARTY,AUSTIN DEWAYNE</td>
+<td>Beto</td>
+<td>M</td>
+<td>W</td>
+<td>29</td>
+<td>03/05/2065</td>
+<td>03/05/2065</td>
+<td>03/05/2045</td>
+<td>241-0613-24</td>
+<td>Smith</td>
+<td>35990281</td>
+<td>MAN DEL CS PG1-B 4-200G</td>
+<td>06/25/2025</td>
+<td>12/31/2023</td>
+<td>40.0</td>
+<td>NaN</td>
+<td>03/05/2045</td>
+<td>NOT IN REVIEW PROCESS</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">142415</th>
+<td>50823662</td>
+<td>2600258</td>
+<td>APPLE,JONATHAN WARREN</td>
+<td>Glossbrenner</td>
+<td>M</td>
+<td>W</td>
+<td>46</td>
+<td>09/03/2026</td>
+<td>02/04/2031</td>
+<td>NaN</td>
+<td>25-08-36209-D</td>
+<td>Victoria</td>
+<td>35990249</td>
+<td>POSS CS PG 1/1-B &gt;=4G&lt;200G</td>
+<td>NaN</td>
+<td>06/09/2025</td>
+<td>5.0</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">142439</th>
+<td>80967842</td>
+<td>2597646</td>
+<td>HATTEN,MIRANDA ANN</td>
+<td>Halbert</td>
+<td>F</td>
+<td>W</td>
+<td>45</td>
+<td>08/12/2026</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>CR25-00146</td>
+<td>Van Zandt</td>
+<td>35990250</td>
+<td>POSS CS PG 1/1-B &gt;=200G&lt;400G</td>
+<td>NaN</td>
+<td>04/14/2025</td>
+<td>5.0</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+<p>21004 rows × 20 columns</p>
+</div>
+</div>
+</div>
+<div id="9e03b142" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>drug_breakdown <span class="op">=</span> <span class="bu">len</span>(drug_df) <span class="op">/</span> total_rows <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>drug_breakdown</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>14.745857905082843</code></pre>
+</div>
+</div>
+<p>The new dataset has 21004 rows, meaning 21004 people are incarceration for some sort of drug charge. This accounts for 14.7% of the entire dataset. This is interesting, because the individual charges are slightly different, but when grouped together, it paints a more illuminating picture than strictly looking at the individual offenses.</p>
+</section>
+<section id="qestion-8-how-does-this-the-racial-breakdown-of-drug-convictions-compare-to-the-racial-breakdown-of-the-dataset-as-a-whole" class="level2">
+<h2 class="anchored" data-anchor-id="qestion-8-how-does-this-the-racial-breakdown-of-drug-convictions-compare-to-the-racial-breakdown-of-the-dataset-as-a-whole">QESTION #8: How does this the racial breakdown of drug convictions compare to the racial breakdown of the dataset as a whole?</h2>
+<div id="a5c9c710" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#racial breakdown of drug conviction subset</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>count_white2 <span class="op">=</span> <span class="bu">len</span>(drug_df[drug_df[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'W'</span>]) </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>count_black2 <span class="op">=</span> <span class="bu">len</span>(drug_df[drug_df[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'B'</span>])</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>count_asian2 <span class="op">=</span> <span class="bu">len</span>(drug_df[drug_df[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'A'</span>])</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>count_hisp2 <span class="op">=</span> <span class="bu">len</span>(drug_df[drug_df[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'H'</span>])</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>count_native2 <span class="op">=</span> <span class="bu">len</span>(drug_df[drug_df[<span class="st">'Race'</span>] <span class="op">==</span> <span class="st">'I'</span>])</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>white_breakdown2 <span class="op">=</span> count_white2 <span class="op">/</span> <span class="bu">len</span>(drug_df) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>black_breakdown2 <span class="op">=</span> count_black2 <span class="op">/</span> <span class="bu">len</span>(drug_df) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>asian_breakdown2 <span class="op">=</span> count_asian2 <span class="op">/</span> <span class="bu">len</span>(drug_df) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>hisp_breakdown2 <span class="op">=</span> count_hisp2 <span class="op">/</span> <span class="bu">len</span>(drug_df) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>native_breakdown2 <span class="op">=</span> count_native2 <span class="op">/</span> <span class="bu">len</span>(drug_df) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of white people: "</span>,  white_breakdown2)</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Black people: "</span>,  black_breakdown2)</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Asian people: "</span>,  asian_breakdown2)</span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Hispanic people: "</span>,  hisp_breakdown2)</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of Native people: "</span>,  native_breakdown2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Percentage of white people:  43.08227004380118
+Percentage of Black people:  25.452294800990288
+Percentage of Asian people:  0.3237478575509427
+Percentage of Hispanic people:  31.055989335364693
+Percentage of Native people:  0.04284898114644829</code></pre>
+</div>
+</div>
+<p>Percentage of white people: 43.08 Percentage of Black people: 25.45 Percentage of Asian people: 0.32 Percentage of Hispanic people: 31.06 Percentage of Native people: 0.04</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ratraverfallick\.github\.io\/sds316\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

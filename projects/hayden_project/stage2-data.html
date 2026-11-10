@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hayden Steinmann">
+
+<title>Initial Questions – SDS316 - Fall 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-38a3e71591390121d99b591f9aaca1bc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script>
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+</script>
+<script type="module">import "https://cdn.plot.ly/plotly-4.1.1.min"</script>
+
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SDS316 - Fall 2026</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html"> <i class="bi bi-file-earmark" role="img">
+</i> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../assignments.html"> <i class="bi bi-list-task" role="img">
+</i> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lectures.html"> <i class="bi bi-chat" role="img">
+</i> 
+<span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../schedule.html"> <i class="bi bi-calendar-minus" role="img">
+</i> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> <i class="bi bi-rocket-takeoff" role="img">
+</i> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-tools" role="img">
+</i> 
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../../datasets.html"><i class="bi bi-table" role="img">
+</i> 
+ <span class="dropdown-text">Datasets</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tech-stack.html"><i class="bi bi-laptop" role="img">
+</i> 
+ <span class="dropdown-text">Working Environment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../examples.html"><i class="bi bi-bar-chart-steps" role="img">
+</i> 
+ <span class="dropdown-text">Examples</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../class-log.html"><i class="bi bi-box-arrow-in-right" role="img">
+</i> 
+ <span class="dropdown-text">Class Log</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1PpndXanj3ffEbUn9nla2POWdhno5BHOCkrkRx4DyzTc/edit?tab=t.0#heading=h.5xdobrmir9r2"> <i class="bi bi-envelope" role="img" aria-label="Contact and Office Hours">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/drnikko/sds316"> <i class="bi bi-github" role="img" aria-label="Github">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a>
+  <ul class="collapse">
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a></li>
+  </ul></li>
+  <li><a href="#loading-and-merging-initial-datasets" id="toc-loading-and-merging-initial-datasets" class="nav-link" data-scroll-target="#loading-and-merging-initial-datasets">Loading and Merging Initial Datasets</a></li>
+  <li><a href="#question-1-what-kinds-of-disciplinary-incidents-are-reported-in-mecklenburg-schools" id="toc-question-1-what-kinds-of-disciplinary-incidents-are-reported-in-mecklenburg-schools" class="nav-link" data-scroll-target="#question-1-what-kinds-of-disciplinary-incidents-are-reported-in-mecklenburg-schools">Question 1: What kinds of disciplinary incidents are reported in Mecklenburg schools?</a></li>
+  <li><a href="#question-2-how-do-short-term-and-in-school-suspension-rates-differ-across-racial-groups" id="toc-question-2-how-do-short-term-and-in-school-suspension-rates-differ-across-racial-groups" class="nav-link" data-scroll-target="#question-2-how-do-short-term-and-in-school-suspension-rates-differ-across-racial-groups">Question 2: How do short-term and in-school suspension rates differ across racial groups?</a></li>
+  <li><a href="#quesiton-3-is-a-pattern-present-surrounding-economic-status" id="toc-quesiton-3-is-a-pattern-present-surrounding-economic-status" class="nav-link" data-scroll-target="#quesiton-3-is-a-pattern-present-surrounding-economic-status">Quesiton 3: Is a pattern present surrounding economic status?</a></li>
+  <li><a href="#question-4-do-schools-with-different-racialsocioeconomic-breakdowns-have-different-disciplinary-rates" id="toc-question-4-do-schools-with-different-racialsocioeconomic-breakdowns-have-different-disciplinary-rates" class="nav-link" data-scroll-target="#question-4-do-schools-with-different-racialsocioeconomic-breakdowns-have-different-disciplinary-rates">Question 4: Do schools with different racial/socioeconomic breakdowns have different disciplinary rates?</a></li>
+  <li><a href="#question-5-do-racial-disparities-in-suspension-rates-also-appear-in-law-enforcement-refferals-and-school-related-arrests" id="toc-question-5-do-racial-disparities-in-suspension-rates-also-appear-in-law-enforcement-refferals-and-school-related-arrests" class="nav-link" data-scroll-target="#question-5-do-racial-disparities-in-suspension-rates-also-appear-in-law-enforcement-refferals-and-school-related-arrests">Question 5: Do racial disparities in suspension rates also appear in law enforcement refferals and school-related arrests?</a></li>
+  <li><a href="#question-6-are-schools-with-higher-suspension-rates-iss-and-sts-also-reporting-higher-rates-of-law-enforcement-referrals-and-school-related-arrests" id="toc-question-6-are-schools-with-higher-suspension-rates-iss-and-sts-also-reporting-higher-rates-of-law-enforcement-referrals-and-school-related-arrests" class="nav-link" data-scroll-target="#question-6-are-schools-with-higher-suspension-rates-iss-and-sts-also-reporting-higher-rates-of-law-enforcement-referrals-and-school-related-arrests">Question 6: Are schools with higher suspension rates (ISS and STS) also reporting higher rates of law enforcement referrals and school-related arrests?</a></li>
+  <li><a href="#shift-in-analysis" id="toc-shift-in-analysis" class="nav-link" data-scroll-target="#shift-in-analysis">Shift in Analysis</a></li>
+  <li><a href="#loading-and-merging-more-datasets" id="toc-loading-and-merging-more-datasets" class="nav-link" data-scroll-target="#loading-and-merging-more-datasets">Loading and Merging More Datasets</a></li>
+  <li><a href="#question-7-how-does-racial-composition-vary-across-charlotte-mecklenburg-schools-cms" id="toc-question-7-how-does-racial-composition-vary-across-charlotte-mecklenburg-schools-cms" class="nav-link" data-scroll-target="#question-7-how-does-racial-composition-vary-across-charlotte-mecklenburg-schools-cms">Question 7: How does racial composition vary across Charlotte-Mecklenburg Schools (CMS)?</a></li>
+  <li><a href="#question-8-where-are-cms-schools-located-with-different-demographic-and-disciplanry-breakdowns-located" id="toc-question-8-where-are-cms-schools-located-with-different-demographic-and-disciplanry-breakdowns-located" class="nav-link" data-scroll-target="#question-8-where-are-cms-schools-located-with-different-demographic-and-disciplanry-breakdowns-located">Question 8: Where are CMS schools located with different demographic and disciplanry breakdowns located?</a></li>
+  <li><a href="#question-9-what-type-of-reported-crime-is-the-most-common-in-the-charlottemecklenburg-county-area" id="toc-question-9-what-type-of-reported-crime-is-the-most-common-in-the-charlottemecklenburg-county-area" class="nav-link" data-scroll-target="#question-9-what-type-of-reported-crime-is-the-most-common-in-the-charlottemecklenburg-county-area">Question 9: What type of reported crime is the most common in the Charlotte/Mecklenburg County area?</a></li>
+  <li><a href="#question-10-how-do-reported-violent-crime-vary-across-charlotte-mecklenburgs-neighborhood-profile-areas" id="toc-question-10-how-do-reported-violent-crime-vary-across-charlotte-mecklenburgs-neighborhood-profile-areas" class="nav-link" data-scroll-target="#question-10-how-do-reported-violent-crime-vary-across-charlotte-mecklenburgs-neighborhood-profile-areas">Question 10: How do reported violent crime vary across Charlotte-Mecklenburg’s Neighborhood Profile Areas?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Initial Questions</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hayden Steinmann </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p>This file consists of 10 questions. I added two additional questions that I really wanted to look at. The first four questions look at school demographics and incident/disciplinary reports.</p>
+<section id="dataset" class="level3">
+<h3 class="anchored" data-anchor-id="dataset">Dataset</h3>
+<p>The data from this analysis is pulled form a variety of sources. All files are included within the <code>datasets_files</code> folder. For certain datasets I only pulled the relevant data files to avoid overcrowding. I included data dictionarys for certain files for personal reference.</p>
+</section>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research Question</h3>
+<p>I initially posed three research questions all of which are pretty broad and go in slightly different directions. I’m hoping by the end of Stage 2 I’ll be able to narrow it down and have a better understanding of the data that’s infront of me. The questions included: 1. How the geographic patterns of school/neighborhood segregation in Mecklenburg County may shape patterns of juvenile and young adult criminal legal system involvement, how residential segregation shapes the geography of police encounters in Mecklenburg County, and how the geographic distribution of racial and socioeconomic school segregation in Mecklenburg County has changed over time. I defintely can’t answer all of these in my project but am confident that the data and information for at least one of them exists.</p>
+</section>
+</section>
+<section id="loading-and-merging-initial-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="loading-and-merging-initial-datasets">Loading and Merging Initial Datasets</h2>
+<div id="0bf47b49" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyprojroot <span class="im">import</span> here</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> here(<span class="st">"projects/hayden_project/datasets_files/rcd_inc2.xlsx"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>inc_dis <span class="op">=</span> pd.read_excel(file_path)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inc_dis.shape)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inc_dis.head())</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inc_dis.columns.tolist())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(283181, 19)
+   year agency_code subgroup  iss_per1000  iss_mask_code  sts_per1000  \
+0  2018      00A000      ALL        0.000              0        0.000   
+1  2018      00A000      EDS        0.000              0        0.000   
+2  2018      00A000      ELS        0.000              0        0.000   
+3  2018      00A000      SWD        0.000              0        0.000   
+4  2018      00B000      ALL        0.506              0        0.506   
+
+   sts_mask_code  lts_per1000  lts_mask_code  exp_per1000  exp_mask_code  \
+0              0          0.0              0          0.0              0   
+1              0          0.0              0          0.0              0   
+2              0          0.0              0          0.0              0   
+3              0          0.0              0          0.0              0   
+4              0          0.0              0          0.0              0   
+
+   act_per1000  act_mask_code  bha_per1000  bha_mask_code  rpt_per1000  \
+0          0.0              0        0.000              0          0.0   
+1          0.0              0        0.000              0          0.0   
+2          0.0              0        0.000              0          0.0   
+3          0.0              0        0.000              0          0.0   
+4          0.0              0        0.506              0          0.0   
+
+   rpt_mask_code  arr_per1000  arr_mask_code  
+0              0          0.0              0  
+1              0          0.0              0  
+2              0          0.0              0  
+3              0          0.0              0  
+4              0          0.0              0  
+['year', 'agency_code', 'subgroup', 'iss_per1000', 'iss_mask_code', 'sts_per1000', 'sts_mask_code', 'lts_per1000', 'lts_mask_code', 'exp_per1000', 'exp_mask_code', 'act_per1000', 'act_mask_code', 'bha_per1000', 'bha_mask_code', 'rpt_per1000', 'rpt_mask_code', 'arr_per1000', 'arr_mask_code']</code></pre>
+</div>
+</div>
+<div id="7fdb3d51" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inc_dis[<span class="st">'year'</span>].value_counts().sort_index())</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inc_dis[<span class="st">'subgroup'</span>].value_counts())</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inc_dis[<span class="st">'agency_code'</span>].nunique())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>year
+2018    27674
+2019    26444
+2020    24243
+2021    36344
+2022    33132
+2023    45144
+2024    45184
+2025    45016
+Name: count, dtype: int64
+subgroup
+ALL     22192
+EDS     22147
+MALE    22037
+SWD     21923
+FEM     21725
+WH7     21715
+BL7     21314
+HI7     21058
+MU7     20546
+ELS     18644
+AS7     16311
+AM7     15090
+PI7     13099
+NEDS     8460
+NELS     8460
+NSWD     8460
+Name: count, dtype: int64
+3133</code></pre>
+</div>
+</div>
+<div id="a53dbe4d" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>location <span class="op">=</span> pd.read_excel(here(<span class="st">"projects/hayden_project/datasets_files/rcd_location.xlsx"</span>))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(location.shape)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(location.head())</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(location.columns.tolist())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(54113, 24)
+   year agency_code agency_level designation_Type  \
+0  2006      010303          SCH                P   
+1  2006      010304          SCH                P   
+2  2006      010308          SCH                P   
+3  2006      010310          SCH                P   
+4  2006      010320          SCH                P   
+
+                                       name category_code lea_code    county  \
+0  Alamance-Burlington Middle/Early College             H   010LEA  Alamance   
+1               Alexander Wilson Elementary             E   010LEA  Alamance   
+2                    Altamahaw Ossipee Elem             E   010LEA  Alamance   
+3                          Broadview Middle             M   010LEA  Alamance   
+4                      E M Yoder Elementary             E   010LEA  Alamance   
+
+             street_addr street_addr2  ... grade_span     school_type  \
+0  1247 Jimmie Kerr Road          NaN  ...      09:12  Regular School   
+1             2518 NC 54          NaN  ...      PK:05  Regular School   
+2           2832 N NC 87          NaN  ...      KG:05  Regular School   
+3   2229 Broadview Drive          NaN  ...      06:08  Regular School   
+4   301 N Charles Street          NaN  ...      PK:05  Regular School   
+
+          calendar_type                         url super_name title_i  \
+0  Traditional Calendar   http://amc.abss.k12.nc.us        NaN     NaN   
+1  Traditional Calendar   http://awe.abss.k12.nc.us        NaN     NaN   
+2  Traditional Calendar   http://aoe.abss.k12.nc.us        NaN     NaN   
+3  Traditional Calendar  http://brm.abss.k12.nc.us/        NaN     NaN   
+4  Traditional Calendar   http://eye.abss.k12.nc.us        NaN     NaN   
+
+  residing_district esea stem purple_star  
+0               NaN  NaN  NaN         NaN  
+1               NaN  NaN  NaN         NaN  
+2               NaN  NaN  NaN         NaN  
+3               NaN  NaN  NaN         NaN  
+4               NaN  NaN  NaN         NaN  
+
+[5 rows x 24 columns]
+['year', 'agency_code', 'agency_level', 'designation_Type', 'name', 'category_code', 'lea_code', 'county', 'street_addr', 'street_addr2', 'city', 'state', 'zip', 'phone', 'grade_span', 'school_type', 'calendar_type', 'url', 'super_name', 'title_i', 'residing_district', 'esea', 'stem', 'purple_star']</code></pre>
+</div>
+</div>
+<p>I have to merge two different data sets so that I can properly look at both incident/disciplinary reports and racial disparity information. This was kind of a lot of work and I hate merging so I hope I did it right. Stack Overflow came in clutch. I did a lot of print statemetns so that I could see what I was looking at and what was included in each dataset.</p>
+<p>This is merging the two datasets I’m going to be looking at and is also filtering them so that it’s only schools in Mecklenburg County and the year 2025.</p>
+<div id="938ede79" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>inc_dis_2025 <span class="op">=</span> inc_dis[inc_dis[<span class="st">'year'</span>] <span class="op">==</span> <span class="dv">2025</span>].copy()</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>location_2025 <span class="op">=</span> location[location[<span class="st">'year'</span>] <span class="op">==</span> <span class="dv">2025</span>].copy()</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>merge_2025 <span class="op">=</span> inc_dis_2025.merge(</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a> location_2025,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a> on <span class="op">=</span> [<span class="st">'year'</span>, <span class="st">'agency_code'</span>],</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a> how <span class="op">=</span> <span class="st">'left'</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>meck_2025 <span class="op">=</span> merge_2025[</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a> (merge_2025[<span class="st">'county'</span>] <span class="op">==</span> <span class="st">'Mecklenburg'</span>) <span class="op">&amp;</span> (merge_2025[<span class="st">'agency_level'</span>] <span class="op">==</span> <span class="st">'SCH'</span>)]</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meck_2025.shape)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meck_2025[<span class="st">'name'</span>].nunique())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3527, 41)
+221</code></pre>
+</div>
+</div>
+</section>
+<section id="question-1-what-kinds-of-disciplinary-incidents-are-reported-in-mecklenburg-schools" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-what-kinds-of-disciplinary-incidents-are-reported-in-mecklenburg-schools">Question 1: What kinds of disciplinary incidents are reported in Mecklenburg schools?</h2>
+<p>OKKK!!! I can finally ask my first question. I want to get a general understanding of the types of reports that happen in schools and which ones are most common. The dataset includes several different types of incidents including, in-school suspension, expulsion, criminal acts, bullying, etc. I went ahead and filtered the data so that each school only appears once instead of including multiple student subgroups. This left me with 221 schools.</p>
+<div id="4102ef8d" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Looking only at all students rather than individual subgroups</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>meck_all <span class="op">=</span> meck_2025[meck_2025[<span class="st">'subgroup'</span>] <span class="op">==</span> <span class="st">'ALL'</span>].copy()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>meck_all.to_csv(here(<span class="st">"projects/hayden_project/datasets_files/meck_all.csv"</span>),</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meck_all.shape)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meck_all[<span class="st">'name'</span>].nunique())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(221, 41)
+221</code></pre>
+</div>
+</div>
+<p>I then looked at the median rate of each type of incident per 1000 students.</p>
+<div id="2ca5e804" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Median rate per 1,000 students:"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"In-school suspension:"</span>, meck_all[<span class="st">'iss_per1000'</span>].median())</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Short-term suspension:"</span>, meck_all[<span class="st">'sts_per1000'</span>].median())</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Long-term suspension:"</span>, meck_all[<span class="st">'lts_per1000'</span>].median())</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Expulsion:"</span>, meck_all[<span class="st">'exp_per1000'</span>].median())</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Criminal acts:"</span>, meck_all[<span class="st">'act_per1000'</span>].median())</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Bullying/harassment:"</span>, meck_all[<span class="st">'bha_per1000'</span>].median())</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Law enforcement referrals:"</span>, meck_all[<span class="st">'rpt_per1000'</span>].median())</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"School-related arrests:"</span>, meck_all[<span class="st">'arr_per1000'</span>].median())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Median rate per 1,000 students:
+In-school suspension: 34.6257
+Short-term suspension: 43.8671
+Long-term suspension: 0.0
+Expulsion: 0.0
+Criminal acts: 1.5760999999999998
+Bullying/harassment: 11.6573
+Law enforcement referrals: 1.83745
+School-related arrests: 0.0</code></pre>
+</div>
+</div>
+<p>Right off the bat we see that short-term suspension and in-school suspension have the highest median rates at 34.63 and 43.87, respectively. When comparing these to the number of law enforcement referrals and school-related arrests the numbers vary quite drastically. I think this was a good first exploration as it makes me wonder whether certain groups of students experience these forms of discipline at higher rates and especially whether the 1.84 median rate of law enforcements referrals consists of a certain demographic. I do want to look at law enforcement referrals and school-related arrests a bit more closely since these numbers seem a bit low.</p>
+<div id="c0c49eb7" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meck_all[[<span class="st">'rpt_per1000'</span>, <span class="st">'arr_per1000'</span>]].describe())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       rpt_per1000  arr_per1000
+count   220.000000   220.000000
+mean      9.723381     0.454641
+std      44.606825     6.421930
+min       0.000000     0.000000
+25%       0.000000     0.000000
+50%       1.837450     0.000000
+75%       7.737725     0.000000
+max     642.857100    95.238100</code></pre>
+</div>
+</div>
+<p>This gives a better picture that law enforcement referrals and school-related arrests do happen but perhaps only at certain schools and perhaps some more than others which I’ll look at later.</p>
+</section>
+<section id="question-2-how-do-short-term-and-in-school-suspension-rates-differ-across-racial-groups" class="level2">
+<h2 class="anchored" data-anchor-id="question-2-how-do-short-term-and-in-school-suspension-rates-differ-across-racial-groups">Question 2: How do short-term and in-school suspension rates differ across racial groups?</h2>
+<p>Ok next up I’m going to be filtering the data so that it looks at some of the student subgroups that I mentioned above.</p>
+<div id="adbf1d35" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>race <span class="op">=</span> meck_2025[meck_2025[<span class="st">'subgroup'</span>].isin([<span class="st">'BL7'</span>, <span class="st">'WH7'</span>, <span class="st">'HI7'</span>, <span class="st">'AS7'</span>, <span class="st">'MU7'</span>])].copy()</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(race[[<span class="st">'subgroup'</span>, <span class="st">'sts_per1000'</span>, <span class="st">'iss_per1000'</span>]].groupby(<span class="st">'subgroup'</span>).median())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          sts_per1000  iss_per1000
+subgroup                          
+AS7            0.0000      0.00000
+BL7           85.4434     69.82395
+HI7           19.6078     20.08030
+MU7           38.4615     27.02700
+WH7           17.5439     11.36360</code></pre>
+</div>
+</div>
+<p>WOW. This highlights a pretty staggering difference. These values are based on median values and show that the short-term suspension rate for Black students was nearly five times the rate of white students, at 85.44 and 17.54 respectively. Hispanic and Multiracial (MU) also had higher rates than white students, not quite as drastic but still a noticeable difference. While this pattern was quite clear, I’m interested if there’s any other factors that may contribute to these suspension rates.</p>
+</section>
+<section id="quesiton-3-is-a-pattern-present-surrounding-economic-status" class="level2">
+<h2 class="anchored" data-anchor-id="quesiton-3-is-a-pattern-present-surrounding-economic-status">Quesiton 3: Is a pattern present surrounding economic status?</h2>
+<div id="831984af" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>economic <span class="op">=</span> meck_2025[meck_2025[<span class="st">'subgroup'</span>].isin([<span class="st">'EDS'</span>, <span class="st">'NEDS'</span>])].copy()</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(economic[[<span class="st">'subgroup'</span>, <span class="st">'sts_per1000'</span>, <span class="st">'iss_per1000'</span>]].groupby(<span class="st">'subgroup'</span>).median())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          sts_per1000  iss_per1000
+subgroup                          
+EDS          59.58080     49.99265
+NEDS         24.08595     18.07430</code></pre>
+</div>
+</div>
+<p>Another pretty clear trend. Economically disadvantaged students had in-school and short-term suspension rates over double those of non-economically disadvantaged students. Since a pattern exists when comparing suspension rates to both race and economic status, I’m curious whether a pattern exists between these two variables and how they vary by individaul school.</p>
+</section>
+<section id="question-4-do-schools-with-different-racialsocioeconomic-breakdowns-have-different-disciplinary-rates" class="level2">
+<h2 class="anchored" data-anchor-id="question-4-do-schools-with-different-racialsocioeconomic-breakdowns-have-different-disciplinary-rates">Question 4: Do schools with different racial/socioeconomic breakdowns have different disciplinary rates?</h2>
+<p>For this I unfortunately needed a new data file from the same dataset so I’m going to load that in quickly.</p>
+<div id="96b7b2bf" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>eds <span class="op">=</span> pd.read_excel(here(<span class="st">"projects/hayden_project/datasets_files/rcd_acc_eds.xlsx"</span>))</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(eds.shape)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(eds.head())</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(eds.columns.tolist())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(25222, 4)
+   year agency_code  pct_eds  pct_eds_masking
+0  2017      00A000     44.8              NaN
+1  2017      00B000     66.2              NaN
+2  2017      010303     43.8              NaN
+3  2017      010304     48.3              NaN
+4  2017      010308     48.0              NaN
+['year', 'agency_code', 'pct_eds', 'pct_eds_masking']</code></pre>
+</div>
+</div>
+<p>Ok more merging needs to happen. It’s pretty repetitive to above.</p>
+<div id="7a9b2e92" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>eds_2025 <span class="op">=</span> eds[eds[<span class="st">'year'</span>] <span class="op">==</span> <span class="dv">2025</span>].copy()</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>meck_eds <span class="op">=</span> meck_all.merge(</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a> eds_2025,</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a> on <span class="op">=</span> [<span class="st">'year'</span>, <span class="st">'agency_code'</span>],</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a> how <span class="op">=</span> <span class="st">'left'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Another unfortunate event is that within this dataset I couldn’t seem to find a file that gave the racial demographic breakdown of each school so that’s something that I’m going to have to keep searching for. In the meantime we can look at this datafile that gives us the percentage of students at each school that are economically disadvantaged (EDS). While I’m expecting the answer to be that a high EDS population will correlate to a high STS and ISS rates lets confirm.</p>
+<div id="ad10bb44" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Lowest </span><span class="sc">% E</span><span class="st">DS"</span>, meck_eds[<span class="st">'pct_eds'</span>].<span class="bu">min</span>())</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Highest </span><span class="sc">% E</span><span class="st">DS"</span>, meck_eds[<span class="st">'pct_eds'</span>].<span class="bu">max</span>())</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Median </span><span class="sc">% E</span><span class="st">DS"</span>, meck_eds[<span class="st">'pct_eds'</span>].median())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Lowest % EDS 5.0
+Highest % EDS 85.6
+Median % EDS 50.650000000000006</code></pre>
+</div>
+</div>
+<div id="35b437d7" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meck_eds[[<span class="st">'name'</span>, <span class="st">'pct_eds'</span>, <span class="st">'sts_per1000'</span>, <span class="st">'iss_per1000'</span>]].sort_values(<span class="st">'pct_eds'</span>).head(<span class="dv">10</span>))</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meck_eds[[<span class="st">'name'</span>, <span class="st">'pct_eds'</span>, <span class="st">'sts_per1000'</span>, <span class="st">'iss_per1000'</span>]].sort_values(<span class="st">'pct_eds'</span>, ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                    name  pct_eds  sts_per1000  iss_per1000
+188  Metrolina Regional Scholars Academy      5.0       0.0000       0.0000
+133         Providence Spring Elementary      5.2       0.0000       3.3956
+187                  Lake Norman Charter      8.2      30.7553      76.8883
+215                      Telra Institute     10.7      12.8000       3.2000
+33                   Davidson Elementary     11.1      21.9780      33.8123
+4                Rea Farms STEAM Academy     13.2      34.2276      48.1036
+190         Community School of Davidson     13.8       7.3937       7.3937
+143                  Dilworth Elementary     14.8       2.4631       2.4631
+134               Providence High School     15.0      42.0561     175.7009
+2                Ardrey Kell High School     15.1      22.7273     106.3900
+                                   name  pct_eds  sts_per1000  iss_per1000
+199  Niner University Elementary School     85.6       0.0000       0.0000
+38                 Marie G Davis School     83.0     695.2381     539.6825
+168              Walter G. Byers School     82.1     376.6667     463.3333
+185                Turning Point Middle     81.9    1954.5455     136.3636
+208                    Movement Freedom     81.4       1.6667       0.0000
+120             Bruns Avenue Elementary     79.7     156.8627      14.7059
+184    Elbert Edwin Waddell High School     79.5     188.9764      15.7480
+102       Charlotte-Mecklenburg Academy     78.6    1238.0952       0.0000
+193                      KIPP Charlotte     78.4     202.0460       0.0000
+139      Renaissance West STEAM Academy     78.2     229.5989     217.1508</code></pre>
+</div>
+</div>
+<p>This is quite interesting to look at. I think it brings up an important statistical point as I need to make sure that as I move forward I’m looking at the size of each individaul school. Schools that have an STS/ISS rate of 500+ may be relatively small schools making their numbers relatively skewed so this is an important to look closer at. A relatively small school could have super high numbers, but this ultimately is reflective of fewer students. Looking at the 10 schools with the lowest percent of EDS we see that their STS and ISS rates are relatively low when compared to the 10 schools with the highest percent of EDS. It’s confirming to see this in actual numebrs as it shows that the questions we looked at above were leading us in the right direction.</p>
+</section>
+<section id="question-5-do-racial-disparities-in-suspension-rates-also-appear-in-law-enforcement-refferals-and-school-related-arrests" class="level2">
+<h2 class="anchored" data-anchor-id="question-5-do-racial-disparities-in-suspension-rates-also-appear-in-law-enforcement-refferals-and-school-related-arrests">Question 5: Do racial disparities in suspension rates also appear in law enforcement refferals and school-related arrests?</h2>
+<div id="7ad47c03" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>race_contact <span class="op">=</span> meck_2025[</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    meck_2025[<span class="st">"subgroup"</span>].isin([<span class="st">"BL7"</span>, <span class="st">"WH7"</span>, <span class="st">"HI7"</span>, <span class="st">"AS7"</span>, <span class="st">"MU7"</span>])].copy()</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>contact_summary <span class="op">=</span> race_contact.groupby(<span class="st">"subgroup"</span>).agg(</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    schools_with_data_referrals<span class="op">=</span>(<span class="st">"rpt_per1000"</span>, <span class="st">"count"</span>),</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    schools_with_referrals<span class="op">=</span>(<span class="st">"rpt_per1000"</span>, <span class="kw">lambda</span> x: (x <span class="op">&gt;</span> <span class="dv">0</span>).<span class="bu">sum</span>()),</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    schools_with_data_arrests<span class="op">=</span>(<span class="st">"arr_per1000"</span>, <span class="st">"count"</span>),</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    schools_with_arrests<span class="op">=</span>(<span class="st">"arr_per1000"</span>, <span class="kw">lambda</span> x: (x <span class="op">&gt;</span> <span class="dv">0</span>).<span class="bu">sum</span>()))</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>contact_summary[<span class="st">"pct_schools_with_referrals"</span>] <span class="op">=</span> (</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>    contact_summary[<span class="st">"schools_with_referrals"</span>] <span class="op">/</span> contact_summary[<span class="st">"schools_with_data_referrals"</span>] <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>contact_summary[<span class="st">"pct_schools_with_arrests"</span>] <span class="op">=</span> (</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>    contact_summary[<span class="st">"schools_with_arrests"</span>] <span class="op">/</span> contact_summary[<span class="st">"schools_with_data_arrests"</span>] <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(contact_summary)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          schools_with_data_referrals  schools_with_referrals  \
+subgroup                                                        
+AS7                               185                      16   
+BL7                               220                     101   
+HI7                               217                      71   
+MU7                               193                      29   
+WH7                               203                      52   
+
+          schools_with_data_arrests  schools_with_arrests  \
+subgroup                                                    
+AS7                             185                     0   
+BL7                             220                     4   
+HI7                             217                     0   
+MU7                             193                     0   
+WH7                             203                     0   
+
+          pct_schools_with_referrals  pct_schools_with_arrests  
+subgroup                                                        
+AS7                         8.648649                  0.000000  
+BL7                        45.909091                  1.818182  
+HI7                        32.718894                  0.000000  
+MU7                        15.025907                  0.000000  
+WH7                        25.615764                  0.000000  </code></pre>
+</div>
+</div>
+<p>From this we can see that schools report nonzero law enforcement referral rates for Black students more frequently than for the other racial subgroups. 45.9% of schools with available data reported nonzero referral rates. School-related arrests weren’t very common in this data with only four scholls having an arrest rate. The Black subgroup was the highest though it’s hard to compare due to the low numbers.</p>
+</section>
+<section id="question-6-are-schools-with-higher-suspension-rates-iss-and-sts-also-reporting-higher-rates-of-law-enforcement-referrals-and-school-related-arrests" class="level2">
+<h2 class="anchored" data-anchor-id="question-6-are-schools-with-higher-suspension-rates-iss-and-sts-also-reporting-higher-rates-of-law-enforcement-referrals-and-school-related-arrests">Question 6: Are schools with higher suspension rates (ISS and STS) also reporting higher rates of law enforcement referrals and school-related arrests?</h2>
+<div id="78f8878d" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>disc_sum_stats <span class="op">=</span> meck_all[[<span class="st">'iss_per1000'</span>,</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'sts_per1000'</span>, <span class="st">'rpt_per1000'</span>, <span class="st">'arr_per1000'</span>]].describe()</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(disc_sum_stats)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       iss_per1000  sts_per1000  rpt_per1000  arr_per1000
+count   220.000000   220.000000   220.000000   220.000000
+mean    105.262127   143.649971     9.723381     0.454641
+std     161.068220   238.925176    44.606825     6.421930
+min       0.000000     0.000000     0.000000     0.000000
+25%       4.489825     9.255725     0.000000     0.000000
+50%      34.625700    43.867100     1.837450     0.000000
+75%     130.770625   166.378325     7.737725     0.000000
+max     823.056300  1954.545500   642.857100    95.238100</code></pre>
+</div>
+</div>
+<div id="0dcbd230" class="cell" data-execution_count="16">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>disc_corr <span class="op">=</span> meck_all[</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"iss_per1000"</span>, <span class="st">"sts_per1000"</span>, <span class="st">"rpt_per1000"</span>, <span class="st">"arr_per1000"</span>]].corr()</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(disc_corr.loc[</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>        [<span class="st">"iss_per1000"</span>, <span class="st">"sts_per1000"</span>],</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>        [<span class="st">"rpt_per1000"</span>, <span class="st">"arr_per1000"</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             rpt_per1000  arr_per1000
+iss_per1000     0.122366    -0.033910
+sts_per1000     0.475423     0.314329</code></pre>
+</div>
+</div>
+<p>To answer this question I calculated summary statistics and correlations to see the relationship between school disciplinary rates and law enforcement contact. The correlation analysis showed that short-term suspension rates had a moderately postive correlation with law enforcement refferal rates (r = 0.475) and a weaker positive correlation with school-related arrest rates (r = 0.314). For in-school suspension rates had little correlation with referrals and arrests. I think an important thing to note is that the values for these two variables are relatively low making it hard for us to pull any solid statistical findings.</p>
+</section>
+<section id="shift-in-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="shift-in-analysis">Shift in Analysis</h2>
+<p>These next four questions take a more geographical approach</p>
+</section>
+<section id="loading-and-merging-more-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="loading-and-merging-more-datasets">Loading and Merging More Datasets</h2>
+<div id="ce67db20" class="cell" data-execution_count="17">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyprojroot <span class="im">import</span> here</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>race_enrollment <span class="op">=</span> pd.read_csv(here(<span class="st">"projects/hayden_project/datasets_files/pupils_in_membership_by_race_and_sex_24-25.csv"</span>))</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(race_enrollment.shape)</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(race_enrollment.head())</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(race_enrollment.columns.tolist())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(186, 20)
+   Year  LEA             _____LEA Name_____  School  \
+0  2025  600  Charlotte-Mecklenburg Schools     300   
+1  2025  600  Charlotte-Mecklenburg Schools     301   
+2  2025  600  Charlotte-Mecklenburg Schools     302   
+3  2025  600  Charlotte-Mecklenburg Schools     303   
+4  2025  600  Charlotte-Mecklenburg Schools     304   
+
+                       School Name  INDIAN Male  INDIAN Female  ASIAN Male  \
+0        Albemarle Road Elementary            1              0          37   
+1            Albemarle Road Middle            0              0          38   
+2          Ardrey Kell High School            1              3         554   
+3  Charlotte East Language Academy            0              3           0   
+4          Rea Farms STEAM Academy            2              2         162   
+
+   ASIAN Female  HISPANIC Male  HISPANIC Female  BLACK Male  BLACK Female  \
+0            37            218              234          78            74   
+1            50            313              255         145           123   
+2           468            190              185         152           167   
+3             0            259              240          12            26   
+4           167             57               50          62            55   
+
+   WHITE Male  WHITE Female  PACIFIC ISLAND  Male  PACIFIC ISLAND  Female  \
+0          10             5                     0                       0   
+1          13            15                     0                       1   
+2         635           593                     4                       5   
+3          18            24                     1                       0   
+4         234           223                     4                       0   
+
+   TWO OR MORE Male  TWO OR MOREFemale  Total  
+0                 6                  6    706  
+1                11                  7    971  
+2                40                 44  3,041  
+3                 2                  9    594  
+4                35                 22  1,075  
+['Year', 'LEA', '_____LEA Name_____', 'School', 'School Name', 'INDIAN Male', 'INDIAN Female', 'ASIAN Male', 'ASIAN Female', 'HISPANIC Male', 'HISPANIC Female', 'BLACK Male', 'BLACK Female', 'WHITE Male', 'WHITE Female', 'PACIFIC ISLAND  Male', 'PACIFIC ISLAND  Female', 'TWO OR MORE Male', 'TWO OR MOREFemale', 'Total']</code></pre>
+</div>
+</div>
+<p>There’s some cleaning that I need to do convert certain comma sperated values to numbers and making sure that values in two different datasets are able to be merged so I’m going to do that quickly.</p>
+<div id="1d18612c" class="cell" data-execution_count="18">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>race_enrollment <span class="op">=</span> race_enrollment.copy()</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>race_enrollment[<span class="st">'School'</span>] <span class="op">=</span> race_enrollment[<span class="st">'School'</span>].astype(<span class="bu">str</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>race_enrollment[<span class="st">'Total'</span>] <span class="op">=</span> (race_enrollment[<span class="st">'Total'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.replace(<span class="st">','</span>, <span class="st">''</span>, regex <span class="op">=</span> <span class="va">False</span>).astype(<span class="bu">int</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>OK this looks good yay!! Now merge and create matching school codes</p>
+<div id="8791c23f" class="cell" data-execution_count="19">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>cms <span class="op">=</span> meck_all[meck_all[<span class="st">'agency_code'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.startswith(<span class="st">'600'</span>)].copy()</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cms.shape)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cms[[<span class="st">'agency_code'</span>, <span class="st">'name'</span>]].head())</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>cms[<span class="st">'School'</span>] <span class="op">=</span> cms[<span class="st">'agency_code'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>[<span class="op">-</span><span class="dv">3</span>:]</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>cms_race <span class="op">=</span> cms.merge(</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>    race_enrollment,</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>    on <span class="op">=</span> <span class="st">'School'</span>,</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>    how <span class="op">=</span> <span class="st">'left'</span>,</span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>    suffixes <span class="op">=</span> (<span class="st">'_discipline'</span>, <span class="st">'enrollment'</span>))</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>cms_race.head(<span class="dv">10</span>)</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cms[[<span class="st">'agency_code'</span>, <span class="st">'School'</span>, <span class="st">'name'</span>]].head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(186, 41)
+      agency_code                             name
+24271      600300        Albemarle Road Elementary
+24287      600301            Albemarle Road Middle
+24303      600302          Ardrey Kell High School
+24319      600303  Charlotte East Language Academy
+24335      600304          Rea Farms STEAM Academy
+      agency_code School                             name
+24271      600300    300        Albemarle Road Elementary
+24287      600301    301            Albemarle Road Middle
+24303      600302    302          Ardrey Kell High School
+24319      600303    303  Charlotte East Language Academy
+24335      600304    304          Rea Farms STEAM Academy</code></pre>
+</div>
+</div>
+<p>Ok merge complete. Everything matched up nciely. meck_all is from stage2.qmd it includes disciplinary data.</p>
+</section>
+<section id="question-7-how-does-racial-composition-vary-across-charlotte-mecklenburg-schools-cms" class="level2">
+<h2 class="anchored" data-anchor-id="question-7-how-does-racial-composition-vary-across-charlotte-mecklenburg-schools-cms">Question 7: How does racial composition vary across Charlotte-Mecklenburg Schools (CMS)?</h2>
+<p>Building off the analysis that I did in my stage2.qmd, I finally found a dataset that includes the racial breakdown of all of CMS. I’m going to start by looking at schools with the highest and lowest percentage of different races and move from there. As of right now I’m not planning to look at sex so I’m going to combine the male and female counts for each racial group.</p>
+<div id="bcce1526" class="cell" data-execution_count="20">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>cms_race[<span class="st">'pct_black'</span>] <span class="op">=</span> (</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    (cms_race[<span class="st">'BLACK Male'</span>] <span class="op">+</span> cms_race[<span class="st">'BLACK Female'</span>])<span class="op">/</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    cms_race[<span class="st">'Total'</span>] <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>cms_race[<span class="st">'pct_white'</span>] <span class="op">=</span> (</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>    (cms_race[<span class="st">'WHITE Male'</span>] <span class="op">+</span> cms_race[<span class="st">'WHITE Female'</span>])<span class="op">/</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>    cms_race[<span class="st">'Total'</span>] <span class="op">*</span> <span class="dv">100</span>) </span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>cms_race[<span class="st">'pct_hispanic'</span>] <span class="op">=</span> (</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    (cms_race[<span class="st">'HISPANIC Male'</span>] <span class="op">+</span> cms_race[<span class="st">'HISPANIC Female'</span>])<span class="op">/</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>    cms_race[<span class="st">'Total'</span>] <span class="op">*</span> <span class="dv">100</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="90fcebe4" class="cell" data-execution_count="21">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Median percentage of Black students:"</span>, cms_race[<span class="st">'pct_black'</span>].median())</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Lowest percentage of Black students:"</span>, cms_race[<span class="st">'pct_black'</span>].<span class="bu">min</span>())</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Highest percentage of Black students:"</span>, cms_race[<span class="st">'pct_black'</span>].<span class="bu">max</span>())</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cms_race[[<span class="st">'name'</span>, <span class="st">'pct_black'</span>, <span class="st">'sts_per1000'</span>, <span class="st">'iss_per1000'</span>]].sort_values(<span class="st">'pct_black'</span>).head(<span class="dv">10</span>))</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cms_race[[<span class="st">'name'</span>, <span class="st">'pct_black'</span>, <span class="st">'sts_per1000'</span>, <span class="st">'iss_per1000'</span>]].sort_values(<span class="st">'pct_black'</span>, ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Median percentage of Black students: 33.96922161450421
+Lowest percentage of Black students: 0.0
+Highest percentage of Black students: 80.10204081632652
+                                 name  pct_black  sts_per1000  iss_per1000
+184  Elbert Edwin Waddell High School   0.000000     188.9764      15.7480
+46          Elizabeth Lane Elementary   4.237288       2.8409       2.8409
+133      Providence Spring Elementary   5.076142       0.0000       3.3956
+33                Davidson Elementary   5.409975      21.9780      33.8123
+3     Charlotte East Language Academy   6.397306      21.8855      48.8215
+122        Olde Providence Elementary   7.040230       7.1942      15.8273
+143               Dilworth Elementary   7.062147       2.4631       2.4631
+59              Hawk Ridge Elementary   7.521368       0.0000       1.5798
+77             Jay M. Robinson Middle   7.807808      72.0180     204.0510
+134            Providence High School   8.043274      42.0561     175.7009
+                                       name  pct_black  sts_per1000  \
+85                    Turning Point Academy  80.102041    1083.7989   
+168                  Walter G. Byers School  78.694158     376.6667   
+40   First Ward Creative Arts Middle School  75.886525     191.4894   
+169              West Charlotte High School  74.825523     291.5614   
+120                 Bruns Avenue Elementary  74.739583     156.8627   
+163           University Park Creative Arts  71.634615       4.8544   
+91                 Mallard Creek Elementary  69.896907      80.5785   
+90                Mallard Creek High School  69.778870     331.6783   
+139          Renaissance West STEAM Academy  68.859649     229.5989   
+61               Parkside Elementary School  68.607595      13.1868   
+
+     iss_per1000  
+85      335.1955  
+168     463.3333  
+40      141.8440  
+169     364.3254  
+120      14.7059  
+163       0.0000  
+91      107.4380  
+90      682.7210  
+139     217.1508  
+61        0.0000  </code></pre>
+</div>
+</div>
+<p>When looking at these outputs we see substantial variation in racial compostion across CMS. The median percentage of Black students across CMS was roughly 34% however this percentage ranged from 0% to 80.1%. I included the STS and ISS values for the top 10 and bottom 10 schools and noticed that generally speaking schools with higher percentages of Black students also had higher suspension rates. However, this pattern wasn’t always the case suggesting there are likely other outside factors. These findings are pretty similar to a question I asked previoulsy but I thought it was important to take a look at since I’m using a different dataset now.</p>
+</section>
+<section id="question-8-where-are-cms-schools-located-with-different-demographic-and-disciplanry-breakdowns-located" class="level2">
+<h2 class="anchored" data-anchor-id="question-8-where-are-cms-schools-located-with-different-demographic-and-disciplanry-breakdowns-located">Question 8: Where are CMS schools located with different demographic and disciplanry breakdowns located?</h2>
+<p>Ok I now want to move onto looking at the geographic aspect of this analysis a bit more. I thought a good intro to this would be to look at the location of schools. The dataset I’m using already has school adresses, cities, and zip codes but not lat and long values so I’m going to have to first find those which with a little research I learned I can do by using geopy.</p>
+<div id="497c9660" class="cell" data-execution_count="22">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> geopy.geocoders <span class="im">import</span> Nominatim</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> geopy.extra.rate_limiter <span class="im">import</span> RateLimiter</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="co"># geolocator = Nominatim(user_agent = "cms_school_geo")</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="co"># geocode = RateLimiter(geolocator.geocode, min_delay_seconds = 1.1, max_retries = 2)</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="co"># school_locations = cms[['agency_code', 'name', 'street_addr', 'city', 'state', 'zip']].copy()</span></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a><span class="co"># school_locations['full_address'] = (school_locations['street_addr'].astype(str) + ', ' + school_locations['city'].astype(str) + ', ' + school_locations['state'].astype(str) + ', ' + school_locations['zip'].astype(str).str.replace(r'\.0$', '', regex = True) + ', USA')</span></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a><span class="co"># school_locations['location'] = school_locations['full_address'].apply(geocode)</span></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a><span class="co"># school_locations['latitude'] = school_locations['location'].apply(lambda loc: loc.latitude if loc else None)</span></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a><span class="co"># school_locations['longitude'] = school_locations['location'].apply(lambda loc: loc.longitude if loc else None)</span></span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a><span class="co"># school_locations.to_csv(here("projects/hayden_project/datasets_files/cms_school_locations.csv"), index=False)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>I commented out this code because it takes a long time to run and at the end of the code I saved it as a .csv that is now in my datasets_files, but I at least wanted to show how I got those numbers.</p>
+<p>Ok that took like way way longer than I was expecting, but I think it’s kinda crucial to my project so hopefully that’s the last of that. We now have lat and long values for 180/186 of the schools so we can look at some geography stuff. I will probably try and fill in the missing 6 schools by hand.</p>
+<p>I now need to do another merge so that I can have one data frame that has coordinates, racial breakdown, and suspension rates info.</p>
+<div id="50937311" class="cell" data-execution_count="23">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>school_locations <span class="op">=</span> pd.read_csv(here(<span class="st">"projects/hayden_project/datasets_files/cms_school_locations.csv"</span>))</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>school_coords <span class="op">=</span> school_locations[[<span class="st">'agency_code'</span>, <span class="st">'latitude'</span>, <span class="st">'longitude'</span>]].copy()</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>cms_race[<span class="st">"agency_code"</span>] <span class="op">=</span> cms_race[<span class="st">"agency_code"</span>].astype(<span class="bu">str</span>)</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>school_coords[<span class="st">"agency_code"</span>] <span class="op">=</span> school_coords[<span class="st">"agency_code"</span>].astype(<span class="bu">str</span>)</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>cms_map_info <span class="op">=</span> cms_race.merge(school_coords, on <span class="op">=</span> <span class="st">'agency_code'</span>, how <span class="op">=</span> <span class="st">'left'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>PLOT TIME!! I’m using plotly also via help of StackOverflow. This plot is going to map the location of each individal school and then the color will be based on the percent of students that are black and it will also include the STS and ISS levels of that school through the hover feature.</p>
+<p>Also FYI you may have to zoom out a lot and then zoom back in on Mecklenburg county to view it, couldn’t figure out how to set where it auto zooms to.</p>
+<div id="ce3e2e59" class="cell" data-execution_count="24">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.scatter_map(</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>    cms_map_info,</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    lat <span class="op">=</span> <span class="st">'latitude'</span>,</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>    lon <span class="op">=</span> <span class="st">'longitude'</span>,</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>    color <span class="op">=</span> <span class="st">'pct_black'</span>,</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>    hover_name <span class="op">=</span> <span class="st">'name'</span>,</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>    hover_data <span class="op">=</span> {</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">'pct_black'</span>: <span class="st">':.1f'</span>,</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">'sts_per1000'</span>: <span class="st">':.1f'</span>,</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">'iss_per1000'</span>: <span class="st">':.1f'</span>,</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">'latitude'</span>: <span class="va">False</span>,</span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">'longitude'</span>: <span class="va">False</span>},</span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>    color_continuous_scale <span class="op">=</span> <span class="st">'Viridis'</span>,</span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>    zoom <span class="op">=</span> <span class="dv">9</span>,</span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="st">'Racial Composition of Charlotte-Mecklenburg Schools'</span>)</span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div style="height:525px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="a75cb06b-c3b3-4a05-b670-1cfd8640f1ce" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("a75cb06b-c3b3-4a05-b670-1cfd8640f1ce")) {                    Plotly.newPlot(                        "a75cb06b-c3b3-4a05-b670-1cfd8640f1ce",                        [{"customdata":{"dtype":"f8","bdata":"p7kAX52HNUBg5dAi20k8QDY8vVKWoQZAfcBNkCKZQUCX5lYIqy5UwA4e6pi0mTtAuECC4sdYg0DdJAaBletwQNsUj4tqmUFAXTnWIKcuVMCdbp5m3fokQHxhMlUwujZAKVyPwvWYWkByjwDJz4NBQAzCgTXzNFTAs7D7fNeWGUCmm8QgsOI1QP7UeOkmaUhArJgAssaaQUDa18sA4S9UwHFH3BF3xCVA6Ugu\u002fyEdQUDM7snDQg1IQH+xCA\u002fkhkFATJ78J8kxVMBdg9rqfalNQBWMSuqEP4FAw\u002fUoXA8wiUCcai3MQrBBQMrhk06kNVTANXxJSMuDREBcj8L1KLw7QHctIR\u002f09FVAcXK\u002fQ1GwQUApMRnYdDVUwP4iZ1hwqUZAAAAAAAAAAAAAAAAAAAAAAHrE6LmFoUFARfBk3Hk6VMBapx7PrhlQQFHaG3xhQHdA845TdCThdkADng8qzJ1BQERMLmsHOVTAU5iwGKy9JUBZF7fRAM5XQFioNc07cGpAlo9J6xS8QUAQO1PoPDVUwL5MVIXQ7CJAiPTb14HnW0DBOSNKe+FkQFgNeE\u002fUu0FAldeloaE1VMDzld0xwi8wQFOWIY51MTZAB1+YTBUcOkBqNX+nJJZBQOXZQBWSKVTAR40rR40rSEBSSZ2AJgJFQBE2PL1Sdk5A+3+LBAmbQUBnnfF98ThUwEfVI6go5khAkst\u002fSD+KhUBrmnecoqxzQExZ4fFIpEFAPI56438\u002fVMCkVcg9vmpHQAu1pnnHGVBAwhcmUwVlZkCxGxHnPKRBQPETYoliP1TASrkzB6OBJkCpE9BE2FBKQH0\u002fNV66GT9AztJf+T2bQUDAywwbZT9UwEvwbf4KsyZAPQrXo3B9EkDDZKpgVJIlQLjZabXRkEFAyMlp9I81VMCXV7KzHqRGQDlFR3L5a2ZA8BZIUPwqakCN5aeCm4tBQN7t1SJ9QVTAHtEMdu5rNECcM6K0N\u002fggQOeMKO0NPihAwKofQCuzQUAmqrcGNjtUwH19fX19fTlAOwFNhA3PEkA7AU2EDc8iQP1fv3FjoEFAvZHUnQIxVMCY9X5Z75coQK5H4XoU9GBAKcsQx7qUW0C66HXVTZBBQIhBqnJrM1TAqqqqqqrqRkAAAAAAAAAAAAAAAAAAAAAAp+26EtyhQUCoylJGty5UwA9zmMMcZkJAAAAAAAAAAADgLZCg+ElwQCCcqtYdmUFA2ppjL8ozVMCA1bgX+FctQAAAAAAAAAAAAAAAAAAAAAA1SvK3mJpBQFl6I6k7M1TAl4BLwCXgPkCM22gAbyExQP5l9+RhIQFAcSHqmbmcQUBM1vIUAyhUwPUueTDgjDdANV66SQyjekAp7Q2+MCyGQAISTaCIn0FAmZtvRPcvVMCLvajUsIokQKwcWmQ751dAOwFNhA2HXUA5FV+jm5RBQA+\u002fUeG+N1TA3j\u002fHYCB2KEB8YTJVMN5SQJ88LNSaEmBAkbzO4bWEQUAoJ9pVyDRUwLnmct4M9CFAmSoYldQJ\u002fT8AAAAAAAAAABLJRtbQvUFAngax2Es3VMDbfbgFFEZDQE2EDU+v3ElAkzoBTYRlU0AgnKrWHZlBQNqaYy\u002fKM1TAL6bEOaLqT0DkFB3J5QZyQOwvuycPPXtAFKIytPCmQUAvZBrydDxUwPvgoDGYsEFAEHo2qz7nRUAzxLEubrM8QG7LNiZ6lEFAqvnga74tVMB5drr2MY86QLfRAN4Cq2JAuY0G8BZYaEDYZI16iJBBQN8pLtjXLVTAs7xoZNCjFUDufD81Xvo1QDlFR3L550BAZO61+7C+QUAXpd8ZSDZUwFuIoif83T1AApoIG54KV0ALRiV1Au5aQHywMVRqj0FAgEQTKGIsVMASI0aMGJFQQATnjCjtsV1ANKK0N\u002fhCE0BUJLrCFqtBQLTDBNpCM1TAEARBEARBQkDT3uALk01eQMbctYR88FJAAAAAAAAA+H8AAAAAAAD4f3plbL+jVzZAKcsQx7roREBTliGOddElQDIRJRBln0FAsgekDrwvVMBkZGRkZGROQGwJ+aDnuYVAKVyPwnXdgEAQ5nYv95lBQH\u002fAAwMIOFTA8eWGGJCOJUCgGi\u002fdJDY+QNDVVuwvo0NAjWbAtAObQUDNv6eDhjZUwFAknNK8+FJAMlUwKqnvZ0BeukkMArthQDoZwWs8nUFA59iLskg1VMA3sBZ0CZtEQL99HThnHERAZ0Rpb\u002fDNVEBsskY9RJZBQCQzzSqiPlTAs8e\u002foo2VTkBlqmBUUnp0QIGVQ4tstHFAAAAAAAAA+H8AAAAAAAD4f\u002fgmePJAyD5AWmQ7309JZ0BYyjLEsQ5xQLiB8cKMlkFA7zPTYpUwVMCuvbH6Az08QILix5i79kVASS7\u002fIf3WKUB60z5nHJlBQLI355aMNFTAAAAAAAAAOUA8TtGR3FyHQKg1zTtO8TFAGveLftmaQUCPxwxUxjFUwCJoOKn78hBAtaZ5xym6BkC1pnnHKboGQGLjsOpijkFA6I5ZUd4vVMAPmw+bD5snQAAAAAAAAAAAo5I6AU2kMkBMx5xn7IJBQJ+3Z0z3NVTAcFBiBpZFUEDSb18HztkdQKpgVFIn4ChA7PvLSYObQUAHyDyXzjRUwKs7SmVO\u002fyxAX5hMFYwKIkDByqFFthtAQK9kIgCTiEFAhF25g301VMDHNqPWQE5EQKyt2F92I1xAfdCzWfVlUkDf3jXoS51BQMChpkwgNFTAIrY8FFzJIUACvAUSFD\u002f+PwAAAAAAAAAAI2k3+piDQUAk0GBT5zRUwHKCcDf2PSBAPQrXo3B9IkA51sVtNLhBQDrb7cT2hUFAYsyn2OIyVMD7UH2vkPRAQO7rwDkjYnFA0NVW7C8xbkDmSB3TybJBQD67Ml4pO1TAXkJ7Ce31PkBwzojS3m53QOPHmLuWSn1Ayrokc9GeQUC\u002fw6NDFjJUwHpOh3YtjEFAeHqlLEMsUkAawFsgQYE7QFIhw88klEFApVOy970vVMD4sPVtwFA2QKYKRiX1YoBAhjjWxW3bgUAo\u002f0kyYZVBQK\u002fBsR1CNVTAe2phpacWPkAAAAAAAAAAAAAAAAAAAAAANh\u002fXhoqQQUDyi1yBMjlUwHIAmorJm1BAWvW52oqjdUCt+lxtxZpYQEkE9AwrnkFAtnzJa8o5VMBe4RVe4RUeQAAAAAAAAAAAZohjXdxG+T8elVEbi4VBQNVWkXbINFTA6XQ6nU6nP0Byio7k8jdBQAAAAAAAAAAAzGX+LPGcQUCdR8X\u002fnS9UwE6Y39XiJlFAHcnlP6RfKkAAAAAAAAAAAMqiVdIvrkFAENa1rLEwVMDCV8V6RgdCQBlz1xLywTlAO99PjZcuEkDzHfzEAZ1BQMQDb+3pLVTA2oWPyp54RUAgQfFjzD1BQIzbaABvQUJADRtl\u002fWawQUBs1QnD2zBUwHZiJ3ZiJz9Ak6mCUUmpV0BcIEHxY5hYQMbp2s1CokFAvgCxWzoyVMA5juM4jgNBQCv2l92ThwdAOwFNhA0PRkASmsncIZ9BQA4FfTN7M1TA1OeSb7wQRUDRkVz+Q\u002fohQLraiv1l9xpAvo0oSMegQUDfiy\u002faYzNUwElPVAqvGUhAE2HD0ysvbkBO0ZFc\u002fhNPQA5yzdNvsEFAMggH1kw6VMAB6oTMuXFPQEMc6+I2gGVAutqK\u002fWUjWkDsRsQ5j6lBQGexuQ9lN1TApAPv+ca0UEANcayL26g7QNlfdk8eJjNAlCASdGqsQUBKV\u002foakzNUwECEtU1fgyhAklz+Q\u002fqNK0DChqdXyhIgQEn1nV+UtEFAFK+ytik2VMA2hNUb3AUwQH0\u002fNV66WTpAzTtO0ZEURUDL017pIZFBQCFi3j4GN1TA6FE1onN4OUD129eBc5YwQC0hH\u002fRsliBAv4Y7cv+XQUDPZ0C9mS9UwKqqqqqqqkBAaCJseHoFIEDdtYR80LMaQLLeA88YoUFAd5H4y90uVMDFK5+I2Vw+QOPHmLuWfFlALbKd76fwZEACYadYNZlBQIg59w0CLFTAkH70ox+9S0Cad5yiI56JQNQrZRnibm1AlLw6x4CmQUA+6xotBzFUwEeJn1HiZ0xAUiegibA+fkDwp8ZLNxFvQNn0VhP6pUFAb0bNV8kxVMCz80\u002f4MTsfQP7UeOkmAVJAEoPAyqGBaUCkfb0MEIhBQPuyDw1mMlTAXl5tPo9YR0DUK2UZ4jg2QMWPMXctoR1AIqOo2D2iQUB33PC7aS5UwOo1b6mmXSBAEFg5tMh28z9v8IXJVKEvQHAW5Yhru0FAHUdiOI03VMCz8PyYHgZDQIv9ZffkBVdALUMc6+LmakAGjU+3opNBQL921agsPVTAvelNb3rTRkB7gy9MpqogQAn5oGezqhBAAAAAAAAA+H8AAAAAAAD4f6W\u002fJ5yumz9AJCh+jLmLL0C4QILix6g3QKy5ktONjkFAh\u002fJPuj4+VMCiEkfDRwgsQHEbDeAtkPU\u002fldQJaCIsEEAkav2IuoRBQPP\u002fqiPHNlTAL\u002f7rI4v6N0B88rBQa6JPQBiV1Alooj9AQPCdPTySQUDRF4xbFjJUwLE+NNaHBlRAGXPXEjLvkEDjpZvEIPN0QH1SN2EMo0FA8I7njtk8VMBu27Zt2zY3QPvL7snDulpAlrIMcaxLUUD3po76kJdBQFO0zegiLFTA2c1ZyoPSSkCTOgFNhA1MQHxhMlUwGjdANum2RC6wQUCNkZFYdzVUwNdQXkN5DSVAAAAAAAAAAAAAAAAAAAAAAHwtQ3ekjUFAfGsWHmosVMDaS2gvof1QQDLmriXkt15AeqUsQxyTSEAIsCNpkrVBQKTBbW3hOlTAqQWhANlxUUAHzhlR2rp0QFTjpZvEVYVA3rEz4IeuQUDvoY7YODFUwBKZhu1meVFAGy\u002fdJAYlVEB56SYxCNxaQBqtWR3vqkFAag8g6I0xVMBhNaiJOPcoQLKd76fGezBAeVioNc17IEDjq3h+rI5BQIDOSZRiLlTAxKrBDNyTPkAgQfFjzFiHQNPe4AuTKS5AAtcVM8KhQUB5e2u75DFUwOWOnwwFAixAorQ3+MKEIkD+ZffkYaH9P73kf\u002fJ3ikFAsulSbQE1VMB6+ah3O25AQD7o2az6jXZA+8vuycOif0Dxp3y+HJdBQBOjQtAsMVTATHMX\u002fFWcJEDZzvdT4+UVQNnO91Pj5RVASOrzB7mIQUBwgPSoUzBUwMNIXDDTJDVAAAAAAAAAFEAAAAAAAEBQQBhtn5\u002fzm0FAgXwJFRwyVMCO+s5GfWdHQBpR2ht8QSdAAAAAAAAAAAAcpmxHJ5xBQOQuwhTlNVTAS655TkMtOkDV52or9o1rQKRwPQrXvHRAJwaSwZuTQUCBpQQOsixUwHmmv0G3K0lAg8DKocUwgEAeFmpNc7iJQEGC4seYm0FAGLiXj\u002f8oVMBbVpuQMcMiQLPqc7UVOzNAaQBvgQTF\u002fj8xW1dxT5NBQPwjwnV7N1TAEIuUgadbUEBR2ht8YViTQAAAAAAAAAAAAAAAAAAA+H8AAAAAAAD4fwJp6+XNBFBA5IOezaocd0Csi9toAB1gQFsjgnFwp0FALiS7LWw7VMDD\u002fK4WN2FOQEvIBz2bBV9AAU2EDU9fO0CMQAY8eqdBQNIjoYigPlTALoSyhVC2PkD2KFyPwrUkQOviNhrAmWNAtY2aCkyYQUBGhgsvdzVUwF0x+kszNjZAtoR80LOBZUC6SQwCK09dQFUPPc7ZlUFAdcLwtnc1VMCXXXbZZRdMQNIA3gIJOk5AumsJ+aD3PECg9CrXgKZBQK+YEd6eMVTAhQPUJafWMEBqTfOOU7xMQEtZhjjWRQpAcStzqQCUQUA8B+Cw\u002fjlUwIN+Ysj4Aj9ApHA9CtdzVkAydy0hH+hZQAAAAAAAAPh\u002fAAAAAAAA+H9RFEVRFEVPQCEf9GxW1URAGXPXEvJtUkDKolXSL65BQBDWtayxMFTAlOjW2yfRQUAPC7Wmed9KQOlILv8hzVZASobSzbSbQUBLkBFQ4StUwDo43HNwuEFAyeU\u002fpN8oeEBkXdxGg1WAQDsu9NJemUFAlXDXAUYsVMAqnz2qk9BLQJ2AJsKGiXFAylTBqKRuY0C95UWBmbdBQACN0qX\u002fNVTAwZXcnt8fS0CYTBWMStV3QMcpOpJLmYVAlbsqq0ShQUDdSgqHuS5UwFikDDzdmkVAr5RliGN9WEAf9GxWfahqQOq953bloEFAAMBWrtw2VMCBFXGtZixDQNobfGEyjUZAFR3J5T\u002foVUB1tAXfj5FBQBTvWwhNPFTAX8qY3UnDQ0A+eVioNb01QBE2PL1SxlJAuungqvyYQUDGNgQiHzJUwHqoh3qoB0tAtMh2vp9KOECoV8oyxDEAQAo3z8drpkFABDf3\u002fFU5VMBmzO6k4fUzQClcj8L1FFBAbjSAt0B+U0BbQdMSK6BBQBs1FZiENlTAVlVVVVWvUkBLyAc9m5tjQCh+jLlraS1ABSvz+6OeQUAoSp3bXzdUwCuWjW+GlkNAUWuad5yuYUBkO99Pjd96QCQ\u002fh545lEFAMIFbd\u002fM8VMAgk+IFMikcQGaIY13cxhxAK\u002faX3ZOnL0DfyQKBKY5BQEMnOoEfM1TAiRY8oABXLUAAAAAAAAAAAKabxCCw8hhA4o9HFWqYQUBz5aIQNzdUwBIgww\u002fVSEVAGy\u002fdJAZBJUDiWBe30QARQORLqODwi0FAuEssOqNBVMBkFc7J0xFJQAAAAAAAAAAAi\u002f1l9+Rh9D+GnK1yV6VBQEWJ8fWQPFTAEMRtkLArT0BQjZduEs9gQGkAb4EEn2pAEquae6OeQUBvsrIiDzlUwFgJY7OgmkxAMEymCkbXYUD6fmq8dFFoQGhIyzeRnEFAE037Qbg0VMBCprBrkktEQAAAAAAAAAAAAAAAAAAAAAC33iUnyZtBQAat0bwtNVTA9Pa9aj7hRkAAAAAAAAAAAAAAAAAAAAAAgdcdQeCTQUDznhT3aTlUwOo6xxqJgDRAs+pztRU7M0C5jQbwFuhOQKbQeY1dikFAQPz89+A4VMA9OwRuLIM8QA+cM6K0tzpAz2bV52rDSUCb7ivFRJVBQE81H3xNN1TAwzAMwzAMOEAAAAAAAAAAAAAAAAAAAAAAXxc04yOWQUDrMMtDyy5UwFLN+jP4TRRAAAAAAAAAAAB8YTJVMCoLQK21QTdFiUFAC6E5oUYxVMCNWjj6JxYgQB6n6EguB0VAhjjWxW32ZUAHa1LALI5BQNOYWgDkMFTA4p+4tkCsOkA2qz5XW0B0QLyWkA96AGtAMtOsIpKOQUDgCWJFsjZUwGZmZmZmZkFAVp+rrdjfG0C\u002ffR04Z\u002fRXQNe+gF64lUFADBKRUGkxVMAze\u002fH73Js+QNZW7C+7K3NAGCZTBaN7d0Dtn6cBg5dBQPc96q\u002fXMlTAB+s+QzZdTkC7uI0GcA6GQN5xio7kKm9Amz0rxH6mQUDFEEqplTVUwHAfwX0EN1FAYTJVMCqzbECUh4Va0yRrQCHwdnOnmkFA\u002fBcIAuQ6VMC9JdyupqFIQN21hHzQK0JAuycPC7X2OkDtKw\u002fSU6FBQM6k8hvLK1TAYao5Zu\u002fWTEDswDkjSsdTQAwCK4cW92RASl3X1B6aQUCEJcOWQzpUwDmIHt+Fg1BAGw3gLRDjgkBSSZ2AJupVQG1hzEwfsEFAPCsODMUwVMDlAl5voz8cQIY41sVttANAhjjWxW20A0CNZsC0A5tBQM2\u002fp4OGNlTAq6qqqqqqQkA\u002fxty1hCKAQDEIrBxaCFdAqNAvAEOZQUAThIZZwzZUwFZVVVVVJVBAKH6MuWtpPUDqBDQRNjwcQO5BCMiXrEFAWcbhJ2kuVMBoL6G9hPYiQOC+Dpwz4hFAKqkT0ETYB0C5J\u002f7eXJVBQENVTKUfNVTAdGoe5K6fMUCfq63YX\u002fYdQJ+rrdhf9g1AnYt1YO+dQUB4Xs98czJUwOk\u002fJaKUHSNA4QuTqYLRHEBfmEwVjEoRQLaMLzWdk0FAdQx+0VQ0VMAodmIndoIyQFHaG3xhkiFAPzVeuknERECWws3z8ZFBQBbqn5ZVOVTA2mNDZLTHMkBuNIC3QOIxQJ0Rpb3BX0NAIiEl0SaOQUBL01bbgzZUwD703re4MDRAppvEILAOU0BMN4lBYJ1ZQPjgtUsbjkFATMecZ+w2VMA429oZh7MzQCNKe4MvcmFAHqfoSC6VZUAYYB+duohBQJAn7h3aNVTA3pP1j0ssKEBU46WbxE5hQAK8BRIUO2NA7YOHxJiLQUBdU3tsJjNUwIuG+OPW5UVAGsBbIEE1fUAH8BZIULZlQG52Wm20jUFAUUL6N3k\u002fVMAVKlSoUKEyQFyPwvUoIFlApU5AE2GjO0BSQlXx65FBQMXMmUjEN1TATjbZZJNNTkAAAAAAAAA4QAAAAAAAAEpApew+EdWlQUAPpEHAEDZUwASsji9lzEBAnzws1JrmNkAPnDOitLc6QI9Q2OoXlEFAAwJCkCg9VMC+Kwe+Kwc0QDGZKhiVVBRAV+wvuyffNkBWmSmtv41BQHdfOlKiOFTAgyQee\u002fq2R0CV1AloIidwQMiYu5aQj01ApGn1epygQUB33bZKizlUwMzOP+HH7ChAS8gHPZs1IkAAAAAAAAAAAGhgPx\u002fAtEFAVfvP9dg3VMA9WlQi+ZomQAAAAAAAAAAAdLUV+8vu\u002fD9ZsEPrl7ZBQD5G1J\u002fYN1TAEtxHcB\u002fBRUCRfvs6cHZEQM3MzMzMIFNAX3WJj\u002fSfQUDUUFkDSjxUwIqd2Imd6FFAQs9m1edqE0AAAAAAAAAAAETecvVjoUFAS5ARUOE2VMC+zV9hViNOQAaBlUOL1F9AMZkqGJXUD0B+VwT\u002fW6lBQDdwB+qULVTAyNTA3jE1QUDtnjws1FojQO2ePCzUWiNAAAAAAAAA+H8AAAAAAAD4f1SmnYM1S0hAkDF3LSGfNUCQMXctIZ8lQIRMjSuJp0FAo9bqYZ4vVMDB1KFoNm5KQEXY8PRKWSBAXCBB8WPMFUADtt7KbZ5BQDnMPF5tNlTAlT3+FW2sU0Dkg57Nqop3QBx8YTJV9XxAtv3hnTKfQUAafKu\u002f7zVUwCgsOWDVtFJAl\u002f+Qfvs4ckDlYaHWNMV2QISqhx7noUFA9FMcB942VMDGQWvORGxPQAaBlUOLdGNAxf6ye\u002fIMUEBUPIljuJ1BQMfe5uhMOlTAHY\u002fL+eBkSEA7AU2EDWmBQCBB8WPMf3BAdYGB1rKfQUD21hsQ\u002fDxUwGPezpCYtzVAIbByaJFNLkDOiNLe4INKQFGlwcgmokFAV3SQfMo1VMDCK7zCKzxOQIEExY8xBoxAxY8xd631g0D5tNSL659BQFOi2wGNPFTAY0Vqob4uRkC1pnnHKdJDQC7\u002fIf32dfQ\u002fJj89ER+nQUA7wmnBCzVUwM51jOJcxyhA9bnaiv11MEAAAAAAAAAAAP19a8yQnEFAfQVpxqIwVMDW+2W9X9ZDQABvgQTFDzNA1QloImyYIUA6\u002frBKjpBBQLlCDgALQFTA0kUXXXTRKkB2cRsN4G0xQHZxGw3gbTFA3x9KD56aQUAGzyltFjFUwMkZFlwq20NArBxaZDvPR0CYbhKDwGo7QLAdjNgni0FADTCYZIk+VMCAumt\u002fumtLQCV1ApoIUXtAtMh2vp9Ad0CxdQTLbKZBQDKMYIhBMVTAW7Zs2bJlS0BqTfOOU+RAQCntDb4wRVRA28AdqFOeQUBCVCtdCzRUwJRgV+HLDUdAMQisHFpkF0AxCKwcWmQXQPjwds5gskFAiYm8m901VMD5cCSYQXg8QJ88LNSa9j5ARIts5\u002fvJNUAXxWEfU5NBQAknWNLALFTAhD0WRcZBNUAXSFD8GNM9QDvfT42XzjZA0Bicd1KZQUDv\u002fh32Zy9UwAAAAAAAAAAAEHo2qz6fZ0Dl0CLb+X4vQIHXHUHgk0FA854U92k5VMBvetOb3vRQQN9PjZcuip5Aa5p3nKILYUAavb\u002fmwaVBQI3Qz9TrMlTA","shape":"186, 5"},"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003epct_black=%{marker.color:.1f}\u003cbr\u003ests_per1000=%{customdata[1]:.1f}\u003cbr\u003eiss_per1000=%{customdata[2]:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Albemarle Road Elementary","Albemarle Road Middle","Ardrey Kell High School","Charlotte East Language Academy","Rea Farms STEAM Academy","J. M. Alexander Middle","North Academy of World Languages","Allenbrook Elementary","Ashley Park PreK-8 School","William Amos Hough High School","Bailey Middle School","Bain Elementary","Charles H. Parker Academic Center","Whitewater Middle","Whitewater Academy","Berryhill School","Beverly Woods Elementary","Palisades High School","Barnette Elementary","Briarwood Academy","Carmel Middle","Cato Middle College High School","Billingsville Elementary","Chantilly Montessori","Clear Creek Elementary","Cochrane Collegiate Academy","Collinswood Language Academy","Community House Middle","Cornelius Elementary","Cotswold Elementary","Coulwood STEM Academy","Crown Point Elementary","Crestdale Middle","Davidson Elementary","David W Butler High School","David Cox Road Elementary","Military and Global Leadership","Devonshire Elementary","Marie G Davis School","Dilworth Elementary School Latta Campus","First Ward Creative Arts Middle School","Berewick Elementary","Druid Hills Academy","East Mecklenburg High School","Eastover Elementary","Eastway Middle","Elizabeth Lane Elementary","Elon Park Elementary","Elizabeth Traditional Elem","Endhaven Elementary","Hawthorne Academy of Health Sciences","Knights View Elementary School","Polo Ridge Elementary","Francis Bradley Middle","Garinger High School","Greenway Park Elementary","Alexander Graham Middle","Harper Middle College High","Harding University High School","Hawk Ridge Elementary","Lawrence Orr Elementary School","Parkside Elementary School","Hickory Grove Elementary","Highland Creek Elementary","Hidden Valley Elementary","Highland Mill Montessori Elementary","Highland Renaissance Academy","Hopewell High School","Hornets Nest Elementary","Croft Community School","Huntersville Elementary","Huntingtowne Farms Elementary","Idlewild Elementary","Grove Park Elementary School","Independence High School","James Martin Middle","Gov's Village STEM (Upper)","Jay M. Robinson Middle","Joseph W Grier Academy","J.V. Washam Elementary","Robert F. Kennedy Middle","Lincoln Heights Montessori","Lake Wylie Elementary","Ballantyne Elementary","Lansdowne Elementary","Turning Point Academy","Lebanon Road Elementary","Legette Blythe Elementary","Levine Middle College High Sch","Long Creek Elementary","Mallard Creek High School","Mallard Creek Elementary","Matthews Elementary","Martin Luther King, Jr Middle","McAlpine Elementary","McClintock Middle","McKee Road Elementary","Merry Oaks International Academy","Metro School","Mint Hill Middle School","Rocky River High School","Montclaire Elementary","Charlotte-Mecklenburg Academy","Mountain Island Lake Academy","River Oaks Academy","Myers Park Traditional Elem","Myers Park High School","Gov's Village STEM (Lower)","Nations Ford Elementary","Newell Elementary","Dorothy J. Vaughan Academy of Technology at Parkside","J. H. Gunn Elementary","Northeast Middle","North Mecklenburg High School","Northridge Middle","Northwest School of the Arts","South Pine Academy","Oakhurst STEAM Academy","Oakdale Elementary","Oaklawn Language Academy","Bruns Avenue Elementary","Olympic High School","Olde Providence Elementary","Sedgefield Montessori","Palisades Park Elementary","Paw Creek Elementary","Phillip O. Berry Academy of Technology","Piedmont Middle School","Central Piedmont Early College","CCharlotte-Mecklenburg Virtual School","Pineville Elementary","Pinewood Elementary","Piney Grove Elementary","Providence Spring Elementary","Providence High School","Quail Hollow Middle","Rama Road Elementary","Randolph IB Middle","Ranson Middle","Renaissance West STEAM Academy","Reedy Creek Elementary","Reid Park Academy","Ridge Road Middle","Dilworth Elementary","Sedgefield Middle","Stoney Creek Elementary","Selwyn Elementary","Shamrock Gardens Elementary","Sharon Elementary","South Academy of International Languages (S.A.I.L.)","Smithfield Elementary","South Mecklenburg High School","Ballantyne Ridge High School","South Charlotte Middle","Southwest Middle School","Starmount Academy of Excellence","Statesville Road Elementary","Steele Creek Elementary","Sterling Elementary","Thomasboro Academy","Torrence Creek Elementary","Grand Oak Elementary School","Tuckaseegee Elementary","University Park Creative Arts","University Meadows Elementary","Char Eng Early College-UNCC","Charlotte Teacher Early College","Irwin Academic Center","Walter G. Byers School","West Charlotte High School","Westerly Hills Academy","West Mecklenburg High School","Williams Secondary Montessori","Wilson STEM Academy","Winding Springs Elementary","Windsor Park Elementary","Winget Park Elementary","Winterfield Elementary","River Gate Elementary","Julius L. Chambers High School","Villa Heights Elementary","Merancas Middle College-CPCC","Mint Hill Elementary School","Esperanza Global Academy","Elbert Edwin Waddell High School","Turning Point Middle"],"lat":{"dtype":"f8","bdata":"fcBNkCKZQUDbFI+LaplBQHKPAMnPg0FArJgAssaaQUB\u002fsQgP5IZBQJxqLcxCsEFAcXK\u002fQ1GwQUB6xOi5haFBQAOeDyrMnUFAlo9J6xS8QUBYDXhP1LtBQGo1f6cklkFA+3+LBAmbQUBMWeHxSKRBQLEbEec8pEFAztJf+T2bQUC42Wm10ZBBQI3lp4Kbi0FAwKofQCuzQUD9X79xY6BBQLroddVNkEFAp+26EtyhQUAgnKrWHZlBQDVK8reYmkFAcSHqmbmcQUACEk2giJ9BQDkVX6OblEFAkbzO4bWEQUASyUbW0L1BQCCcqtYdmUFAFKIytPCmQUBuyzYmepRBQNhkjXqIkEFAZO61+7C+QUB8sDFUao9BQFQkusIWq0FAAAAAAAAA+H8yESUQZZ9BQBDmdi\u002f3mUFAjWbAtAObQUA6GcFrPJ1BQGyyRj1ElkFAAAAAAAAA+H+4gfHCjJZBQHrTPmccmUFAGveLftmaQUBi47DqYo5BQEzHnGfsgkFA7PvLSYObQUCvZCIAk4hBQN\u002feNehLnUFAI2k3+piDQUA62+3E9oVBQOZIHdPJskFAyrokc9GeQUBSIcPPJJRBQCj\u002fSTJhlUFANh\u002fXhoqQQUBJBPQMK55BQB6VURuLhUFAzGX+LPGcQUDKolXSL65BQPMd\u002fMQBnUFADRtl\u002fWawQUDG6drNQqJBQBKaydwhn0FAvo0oSMegQUAOcs3Tb7BBQOxGxDmPqUFAlCASdGqsQUBJ9Z1flLRBQMvTXukhkUFAv4Y7cv+XQUCy3gPPGKFBQAJhp1g1mUFAlLw6x4CmQUDZ9FYT+qVBQKR9vQwQiEFAIqOo2D2iQUBwFuWIa7tBQAaNT7eik0FAAAAAAAAA+H+suZLTjY5BQCRq\u002fYi6hEFAQPCdPTySQUB9UjdhDKNBQPemjvqQl0FANum2RC6wQUB8LUN3pI1BQAiwI2mStUFA3rEz4IeuQUAarVkd76pBQOOreH6sjkFAAtcVM8KhQUC95H\u002fyd4pBQPGnfL4cl0FASOrzB7mIQUAYbZ+f85tBQBymbEcnnEFAJwaSwZuTQUBBguLHmJtBQDFbV3FPk0FAAAAAAAAA+H9bI4JxcKdBQIxABjx6p0FAtY2aCkyYQUBVDz3O2ZVBQKD0KteApkFAcStzqQCUQUAAAAAAAAD4f8qiVdIvrkFASobSzbSbQUA7LvTSXplBQL3lRYGZt0FAlbsqq0ShQUDqved25aBBQHW0Bd+PkUFAuungqvyYQUAKN8\u002fHa6ZBQFtB0xIroEFABSvz+6OeQUAkP4eeOZRBQN\u002fJAoEpjkFA4o9HFWqYQUDkS6jg8ItBQIacrXJXpUFAEquae6OeQUBoSMs3kZxBQLfeJSfJm0FAgdcdQeCTQUCm0HmNXYpBQJvuK8VElUFAXxc04yOWQUCttUE3RYlBQAdrUsAsjkFAMtOsIpKOQUDXvoBeuJVBQO2fpwGDl0FAmz0rxH6mQUAh8HZzp5pBQO0rD9JToUFASl3X1B6aQUBtYcxMH7BBQI1mwLQDm0FAqNAvAEOZQUDuQQjIl6xBQLkn\u002ft5clUFAnYt1YO+dQUC2jC81nZNBQJbCzfPxkUFAIiEl0SaOQUD44LVLG45BQBhgH526iEFA7YOHxJiLQUBudlpttI1BQFJCVfHrkUFApew+EdWlQUCPUNjqF5RBQFaZKa2\u002fjUFApGn1epygQUBoYD8fwLRBQFmwQ+uXtkFAX3WJj\u002fSfQUBE3nL1Y6FBQH5XBP9bqUFAAAAAAAAA+H+ETI0riadBQAO23sptnkFAtv3hnTKfQUCEqoce56FBQFQ8iWO4nUFAdYGB1rKfQUBRpcHIJqJBQPm01Ivrn0FAJj89ER+nQUD9fWvMkJxBQDr+sEqOkEFA3x9KD56aQUCwHYzYJ4tBQLF1BMtspkFA28AdqFOeQUD48HbOYLJBQBfFYR9Tk0FA0Bicd1KZQUCB1x1B4JNBQBq9v+bBpUFA"},"legendgroup":"","lon":{"dtype":"f8","bdata":"l+ZWCKsuVMBdOdYgpy5UwAzCgTXzNFTA2tfLAOEvVMBMnvwnyTFUwMrhk06kNVTAKTEZ2HQ1VMBF8GTceTpUwERMLmsHOVTAEDtT6Dw1VMCV16WhoTVUwOXZQBWSKVTAZ53xffE4VMA8jnrjfz9UwPETYoliP1TAwMsMG2U\u002fVMDIyWn0jzVUwN7t1SJ9QVTAJqq3BjY7VMC9kdSdAjFUwIhBqnJrM1TAqMpSRrcuVMDammMvyjNUwFl6I6k7M1TATNbyFAMoVMCZm29E9y9UwA+\u002fUeG+N1TAKCfaVcg0VMCeBrHYSzdUwNqaYy\u002fKM1TAL2Qa8nQ8VMCq+eBrvi1UwN8pLtjXLVTAF6XfGUg2VMCARBMoYixUwLTDBNpCM1TAAAAAAAAA+H+yB6QOvC9UwH\u002fAAwMIOFTAzb+ng4Y2VMDn2IuySDVUwCQzzSqiPlTAAAAAAAAA+H\u002fvM9NilTBUwLI355aMNFTAj8cMVMYxVMDojllR3i9UwJ+3Z0z3NVTAB8g8l840VMCEXbmDfTVUwMChpkwgNFTAJNBgU+c0VMBizKfY4jJUwD67Ml4pO1TAv8OjQxYyVMClU7L3vS9UwK\u002fBsR1CNVTA8otcgTI5VMC2fMlryjlUwNVWkXbINFTAnUfF\u002f50vVMAQ1rWssTBUwMQDb+3pLVTAbNUJw9swVMC+ALFbOjJUwA4FfTN7M1TA34sv2mMzVMAyCAfWTDpUwGexuQ9lN1TASlf6GpMzVMAUr7K2KTZUwCFi3j4GN1TAz2dAvZkvVMB3kfjL3S5UwIg59w0CLFTAPusaLQcxVMBvRs1XyTFUwPuyDw1mMlTAd9zwu2kuVMAdR2I4jTdUwL921agsPVTAAAAAAAAA+H+H8k+6Pj5UwPP\u002fqiPHNlTA0ReMWxYyVMDwjueO2TxUwFO0zegiLFTAjZGRWHc1VMB8axYeaixUwKTBbW3hOlTA76GO2DgxVMBqDyDojTFUwIDOSZRiLlTAeXtru+QxVMCy6VJtATVUwBOjQtAsMVTAcID0qFMwVMCBfAkVHDJUwOQuwhTlNVTAgaUEDrIsVMAYuJeP\u002fyhUwPwjwnV7N1TAAAAAAAAA+H8uJLstbDtUwNIjoYigPlTARoYLL3c1VMB1wvC2dzVUwK+YEd6eMVTAPAfgsP45VMAAAAAAAAD4fxDWtayxMFTAS5ARUOErVMCVcNcBRixUwACN0qX\u002fNVTA3UoKh7kuVMAAwFau3DZUwBTvWwhNPFTAxjYEIh8yVMAEN\u002ff8VTlUwBs1FZiENlTAKEqd2183VMAwgVt38zxUwEMnOoEfM1TAc+WiEDc3VMC4Syw6o0FUwEWJ8fWQPFTAb7KyIg85VMATTftBuDRUwAat0bwtNVTA854U92k5VMBA\u002fPz34DhUwE81H3xNN1TA6zDLQ8suVMALoTmhRjFUwNOYWgDkMFTA4AliRbI2VMAMEpFQaTFUwPc96q\u002fXMlTAxRBKqZU1VMD8FwgC5DpUwM6k8hvLK1TAhCXDlkM6VMA8Kw4MxTBUwM2\u002fp4OGNlTAE4SGWcM2VMBZxuEnaS5UwENVTKUfNVTAeF7PfHMyVMB1DH7RVDRUwBbqn5ZVOVTAS9NW24M2VMBMx5xn7DZUwJAn7h3aNVTAXVN7bCYzVMBRQvo3eT9UwMXMmUjEN1TAD6RBwBA2VMADAkKQKD1UwHdfOlKiOFTAd922Sos5VMBV+8\u002f12DdUwD5G1J\u002fYN1TA1FBZA0o8VMBLkBFQ4TZUwDdwB+qULVTAAAAAAAAA+H+j1uphni9UwDnMPF5tNlTAGnyrv+81VMD0UxwH3jZUwMfe5uhMOlTA9tYbEPw8VMBXdJB8yjVUwFOi2wGNPFTAO8JpwQs1VMB9BWnGojBUwLlCDgALQFTABs8pbRYxVMANMJhkiT5UwDKMYIhBMVTAQlQrXQs0VMCJibyb3TVUwAknWNLALFTA7\u002f4d9mcvVMDznhT3aTlUwI3Qz9TrMlTA"},"marker":{"color":{"dtype":"f8","bdata":"p7kAX52HNUAOHuqYtJk7QJ1unmbd+iRAs7D7fNeWGUBxR9wRd8QlQF2D2up9qU1ANXxJSMuDRED+ImdYcKlGQFqnHs+uGVBAU5iwGKy9JUC+TFSF0OwiQPOV3THCLzBAR40rR40rSEBH1SOoKOZIQKRVyD2+akdASrkzB6OBJkBL8G3+CrMmQJdXsrMepEZAHtEMdu5rNEB9fX19fX05QJj1flnvlyhAqqqqqqrqRkAPc5jDHGZCQIDVuBf4Vy1Al4BLwCXgPkD1Lnkw4Iw3QIu9qNSwiiRA3j\u002fHYCB2KEC55nLeDPQhQNt9uAUURkNAL6bEOaLqT0D74KAxmLBBQHl2uvYxjzpAs7xoZNCjFUBbiKIn\u002fN09QBIjRowYkVBAEARBEARBQkB6ZWy\u002fo1c2QGRkZGRkZE5A8eWGGJCOJUBQJJzSvPhSQDewFnQJm0RAs8e\u002foo2VTkD4JnjyQMg+QK69sfoDPTxAAAAAAAAAOUAiaDip+\u002fIQQA+bD5sPmydAcFBiBpZFUECrO0plTv8sQMc2o9ZATkRAIrY8FFzJIUBygnA39j0gQPtQfa+Q9EBAXkJ7Ce31PkB6Tod2LYxBQPiw9W3AUDZAe2phpacWPkByAJqKyZtQQF7hFV7hFR5A6XQ6nU6nP0BOmN\u002fV4iZRQMJXxXpGB0JA2oWPyp54RUB2Yid2Yic\u002fQDmO4ziOA0FA1OeSb7wQRUBJT1QKrxlIQAHqhMy5cU9ApAPv+ca0UEBAhLVNX4MoQDaE1RvcBTBA6FE1onN4OUCqqqqqqqpAQMUrn4jZXD5AkH70ox+9S0BHiZ9R4mdMQLPzT\u002fgxOx9AXl5tPo9YR0DqNW+ppl0gQLPw\u002fJgeBkNAvelNb3rTRkClvyecrps\u002fQKISR8NHCCxAL\u002f7rI4v6N0CxPjTWhwZUQG7btm3bNjdA2c1ZyoPSSkDXUF5DeQ0lQNpLaC+h\u002fVBAqQWhANlxUUASmYbtZnlRQGE1qIk49yhAxKrBDNyTPkDljp8MBQIsQHr5qHc7bkBATHMX\u002fFWcJEDDSFww0yQ1QI76zkZ9Z0dAS655TkMtOkB5pr9BtytJQFtWm5AxwyJAEIuUgadbUEACaevlzQRQQMP8rhY3YU5ALoSyhVC2PkBdMfpLMzY2QJdddtllF0xAhQPUJafWMECDfmLI+AI\u002fQFEURVEURU9AlOjW2yfRQUA6ONxzcLhBQCqfPaqT0EtAwZXcnt8fS0BYpAw83ZpFQIEVca1mLENAX8qY3UnDQ0B6qId6qAdLQGbM7qTh9TNAVlVVVVWvUkArlo1vhpZDQCCT4gUyKRxAiRY8oABXLUASIMMP1UhFQGQVzsnTEUlAEMRtkLArT0BYCWOzoJpMQEKmsGuSS0RA9Pa9aj7hRkDqOscaiYA0QD07BG4sgzxAwzAMwzAMOEBSzfoz+E0UQI1aOPonFiBA4p+4tkCsOkBmZmZmZmZBQDN78fvcmz5AB+s+QzZdTkBwH8F9BDdRQL0l3K6moUhAYao5Zu\u002fWTEA5iB7fhYNQQOUCXm+jPxxAq6qqqqqqQkBWVVVVVSVQQGgvob2E9iJAdGoe5K6fMUDpPyWilB0jQCh2Yid2gjJA2mNDZLTHMkA+9N63uDA0QDjb2hmHszNA3pP1j0ssKECLhvjj1uVFQBUqVKhQoTJATjbZZJNNTkAErI4vZcxAQL4rB74rBzRAgyQee\u002fq2R0DMzj\u002fhx+woQD1aVCL5miZAEtxHcB\u002fBRUCKndiJnehRQL7NX2FWI05AyNTA3jE1QUBUpp2DNUtIQMHUoWg2bkpAlT3+FW2sU0AoLDlg1bRSQMZBa85EbE9AHY\u002fL+eBkSEBj3s6QmLc1QMIrvMIrPE5AY0Vqob4uRkDOdYziXMcoQNb7Zb1f1kNA0kUXXXTRKkDJGRZcKttDQIC6a3+6a0tAW7Zs2bJlS0CUYFfhyw1HQPlwJJhBeDxAhD0WRcZBNUAAAAAAAAAAAG9605ve9FBA"},"coloraxis":"coloraxis"},"mode":"markers","name":"","showlegend":false,"subplot":"map","type":"scattermap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"margin":{"b":0,"l":0,"r":0,"t":30}}},"map":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{},"zoom":9},"coloraxis":{"colorbar":{"title":{"text":"pct_black"}},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"autocolorscale":false},"legend":{"tracegroupgap":0},"title":{"text":"Racial Composition of Charlotte-Mecklenburg Schools"}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('a75cb06b-c3b3-4a05-b670-1cfd8640f1ce');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
+<p>This looks far from random!!!! When looking at the map a pretty apparent pattern becomes clear. It looks like schools with a lower percent of black students are located in the southern part of the county while higher percent schools are more northern and located in a somewhat cone-ish looking shape. This leads me to my next quesiton of why this may be? It also leaves me wondering how this relates to the demographics of surrounding areas and neighborhoods relative to schools.</p>
+<p>I’m kinda needing a lot of datasets at this point, but I guess it’s better to explore too many than too few. The next thing I’m going to look at I think is the racial dispersion of Mecklenburg county as a whole.</p>
+<p>Looking at neighborhood demographics is scaring me a bit so I’m going to pivot a bit and look at the criminal activity throughout Mecklenburg county.</p>
+</section>
+<section id="question-9-what-type-of-reported-crime-is-the-most-common-in-the-charlottemecklenburg-county-area" class="level2">
+<h2 class="anchored" data-anchor-id="question-9-what-type-of-reported-crime-is-the-most-common-in-the-charlottemecklenburg-county-area">Question 9: What type of reported crime is the most common in the Charlotte/Mecklenburg County area?</h2>
+<p>Ok lets look at a dataset from the CMPD that is a record of violent crime in the area.</p>
+<div id="3b3837d2" class="cell" data-execution_count="25">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>crime <span class="op">=</span> gpd.read_file(here(</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"projects/hayden_project/datasets_files/Violent_Crime_Data.geojson"</span>))</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(crime.shape)</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(crime.crs)</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(crime.columns.tolist())</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(crime.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(80098, 9)
+EPSG:4326
+['ROW_TYPE', 'GEOGRAPHY', 'GEOGRAPHY_ID', 'CALENDAR_YEAR', 'CALENDAR_MONTH', 'OFFENSE_DESCRIPTION', 'OFFENSE_COUNT', 'OBJECTID', 'geometry']
+            ROW_TYPE GEOGRAPHY  GEOGRAPHY_ID CALENDAR_YEAR CALENDAR_MONTH  \
+0  CMPD Jurisdiction      CMPD             0          2015             01   
+1  CMPD Jurisdiction      CMPD             0          2015             03   
+2  CMPD Jurisdiction      CMPD             0          2015             05   
+3  CMPD Jurisdiction      CMPD             0          2015             02   
+4  CMPD Jurisdiction      CMPD             0          2015             07   
+
+        OFFENSE_DESCRIPTION  OFFENSE_COUNT  OBJECTID geometry  
+0                  Homicide              8         1     None  
+1  Aggravated Assault-Knife             48         2     None  
+2            Attempted Rape              2         3     None  
+3                  Homicide              5         4     None  
+4  Aggravated Assault-Knife             47         5     None  </code></pre>
+</div>
+</div>
+<p>Let’s look at some patterns over time.</p>
+<div id="24cc7816" class="cell" data-execution_count="26">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>overall_crime <span class="op">=</span> crime[</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>    (crime[<span class="st">'ROW_TYPE'</span>] <span class="op">==</span> <span class="st">'CMPD Jurisdiction'</span>) <span class="op">&amp;</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>    (crime[<span class="st">'OFFENSE_DESCRIPTION'</span>] <span class="op">==</span> <span class="st">'Violent Crime'</span>)].copy()</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>overall_crime[<span class="st">'CALENDAR_YEAR'</span>] <span class="op">=</span> pd.to_numeric(overall_crime[<span class="st">'CALENDAR_YEAR'</span>])</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>overall_crime[<span class="st">'OFFENSE_COUNT'</span>] <span class="op">=</span> pd.to_numeric(overall_crime[<span class="st">'OFFENSE_COUNT'</span>])</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>annual_crime <span class="op">=</span> (overall_crime.groupby(<span class="st">'CALENDAR_YEAR'</span>)[<span class="st">'OFFENSE_COUNT'</span>].<span class="bu">sum</span>().reset_index().sort_values(<span class="st">'CALENDAR_YEAR'</span>))</span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>annual_crime <span class="op">=</span> annual_crime[annual_crime[<span class="st">'CALENDAR_YEAR'</span>] <span class="op">&lt;</span> <span class="dv">2026</span>]</span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>plt.plot(</span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>    annual_crime[<span class="st">'CALENDAR_YEAR'</span>],</span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>    annual_crime[<span class="st">'OFFENSE_COUNT'</span>],</span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>    marker <span class="op">=</span> <span class="st">'o'</span>)</span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Reported Violent Crime in Charlotte-Mecklenburg, 2015–2025'</span>)</span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Annual reported violent-crime count'</span>)</span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>plt.xticks(annual_crime[<span class="st">'CALENDAR_YEAR'</span>], rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(annual_crime.to_string(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="stage2-data_files/figure-html/cell-27-output-1.png" width="952" height="472" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code> CALENDAR_YEAR  OFFENSE_COUNT
+          2015           6010
+          2016           6607
+          2017           6389
+          2018           6235
+          2019           6976
+          2020           8102
+          2021           7596
+          2022           7211
+          2023           7219
+          2024           7437
+          2025           5874</code></pre>
+</div>
+</div>
+<p>This is an interesting pattern, I might do some history/lit exploration of the why behind this pattern.</p>
+<p>I’m going to look at the different types of crime next.</p>
+<div id="0896e5f9" class="cell" data-execution_count="27">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>offense_trends <span class="op">=</span> crime[</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>    (crime[<span class="st">'ROW_TYPE'</span>] <span class="op">==</span> <span class="st">'CMPD Jurisdiction'</span>) <span class="op">&amp;</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>    (crime[<span class="st">'OFFENSE_DESCRIPTION'</span>] <span class="op">!=</span> <span class="st">'Violent Crime'</span>)].copy()</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>offense_trends[<span class="st">'CALENDAR_YEAR'</span>] <span class="op">=</span> pd.to_numeric(</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>    offense_trends[<span class="st">'CALENDAR_YEAR'</span>])</span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>offense_trends[<span class="st">'OFFENSE_COUNT'</span>] <span class="op">=</span> pd.to_numeric(</span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>    offense_trends[<span class="st">'OFFENSE_COUNT'</span>])</span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>annual_offenses <span class="op">=</span> (</span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>    offense_trends</span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>    .groupby([<span class="st">'CALENDAR_YEAR'</span>, <span class="st">'OFFENSE_DESCRIPTION'</span>])[<span class="st">'OFFENSE_COUNT'</span>]</span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">sum</span>()</span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>    .reset_index())</span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>annual_offenses <span class="op">=</span> annual_offenses[</span>
+<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a>    annual_offenses[<span class="st">'CALENDAR_YEAR'</span>] <span class="op">&lt;</span> <span class="dv">2026</span>]</span>
+<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-19"><a href="#cb47-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(annual_offenses.head(<span class="dv">15</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    CALENDAR_YEAR                  OFFENSE_DESCRIPTION  OFFENSE_COUNT
+0            2015  Aggravated Assault-Fists,Feet, etc.            111
+1            2015               Aggravated Assault-Gun           2313
+2            2015             Aggravated Assault-Knife            592
+3            2015      Aggravated Assault-Other Weapon            698
+4            2015                        Armed Robbery           1408
+5            2015                       Attempted Rape             17
+6            2015                             Homicide             61
+7            2015             Non-Fatal Gunshot Injury            291
+8            2015                                 Rape            270
+9            2015                   Strong Arm Robbery            540
+10           2016  Aggravated Assault-Fists,Feet, etc.            135
+11           2016               Aggravated Assault-Gun           2673
+12           2016             Aggravated Assault-Knife            601
+13           2016      Aggravated Assault-Other Weapon            732
+14           2016                        Armed Robbery           1555</code></pre>
+</div>
+</div>
+<p>This is interesting to look at. It looks like Aggravated Assault-Gun has by far the most amount of offense counts. Unforutnately this data does not give us any information about the person’s age. I haven’t been able to find a dataset that does this.</p>
+</section>
+<section id="question-10-how-do-reported-violent-crime-vary-across-charlotte-mecklenburgs-neighborhood-profile-areas" class="level2">
+<h2 class="anchored" data-anchor-id="question-10-how-do-reported-violent-crime-vary-across-charlotte-mecklenburgs-neighborhood-profile-areas">Question 10: How do reported violent crime vary across Charlotte-Mecklenburg’s Neighborhood Profile Areas?</h2>
+<p>Working off of this same data I’m wanting to look at how violent crime reports differ accross NPA’s. I hope to maybe define these NPAs at some point. But we’ll see. I need to start narrowing down what I’m doing.</p>
+<div id="52e9d5ef" class="cell" data-execution_count="28">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>npa_crime_2025 <span class="op">=</span> crime[</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>    (crime[<span class="st">'ROW_TYPE'</span>] <span class="op">==</span> <span class="st">'Neighborhood Profile Area'</span>) <span class="op">&amp;</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>    (crime[<span class="st">'OFFENSE_DESCRIPTION'</span>] <span class="op">==</span> <span class="st">'Violent Crime'</span>) <span class="op">&amp;</span></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>    (crime[<span class="st">'CALENDAR_YEAR'</span>].astype(<span class="bu">str</span>) <span class="op">==</span> <span class="st">'2025'</span>)].copy()</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>npa_crime_2025[<span class="st">'OFFENSE_COUNT'</span>] <span class="op">=</span> pd.to_numeric(</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>    npa_crime_2025[<span class="st">'OFFENSE_COUNT'</span>],</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>    errors<span class="op">=</span><span class="st">'coerce'</span>)</span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>npa_totals <span class="op">=</span> (</span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>    npa_crime_2025</span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>    .groupby(<span class="st">'GEOGRAPHY'</span>)[<span class="st">'OFFENSE_COUNT'</span>]</span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">sum</span>()</span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a>    .reset_index()</span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>    .rename(columns<span class="op">=</span>{</span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">'GEOGRAPHY'</span>: <span class="st">'npa'</span>,</span>
+<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">'OFFENSE_COUNT'</span>: <span class="st">'violent_crime_count'</span>}))</span>
+<span id="cb49-18"><a href="#cb49-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-19"><a href="#cb49-19" aria-hidden="true" tabindex="-1"></a>top_npas <span class="op">=</span> npa_totals.sort_values(</span>
+<span id="cb49-20"><a href="#cb49-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'violent_crime_count'</span>,</span>
+<span id="cb49-21"><a href="#cb49-21" aria-hidden="true" tabindex="-1"></a>    ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb49-22"><a href="#cb49-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-23"><a href="#cb49-23" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb49-24"><a href="#cb49-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-25"><a href="#cb49-25" aria-hidden="true" tabindex="-1"></a>plt.bar(</span>
+<span id="cb49-26"><a href="#cb49-26" aria-hidden="true" tabindex="-1"></a>    top_npas[<span class="st">'npa'</span>].astype(<span class="bu">str</span>),</span>
+<span id="cb49-27"><a href="#cb49-27" aria-hidden="true" tabindex="-1"></a>    top_npas[<span class="st">'violent_crime_count'</span>])</span>
+<span id="cb49-28"><a href="#cb49-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-29"><a href="#cb49-29" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Neighborhood Profile Areas with the Highest Reported Violent Crime, 2025'</span>)</span>
+<span id="cb49-30"><a href="#cb49-30" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Neighborhood Profile Area'</span>)</span>
+<span id="cb49-31"><a href="#cb49-31" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Reported violent-crime count'</span>)</span>
+<span id="cb49-32"><a href="#cb49-32" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb49-33"><a href="#cb49-33" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="stage2-data_files/figure-html/cell-29-output-1.png" width="951" height="566" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This is a nice plot that shows that certain NPAs have higher reported counts of violent-crime. It would be interesting to identiy what these NPA numbers represent and the demographic within them.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ratraverfallick\.github\.io\/sds316\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
